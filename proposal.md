@@ -1,5 +1,5 @@
 # CYBR 8420 - Project Proposal
-# Open-Source Project: Elastic Search  
+# Open-Source Project: Elastic Stack  
 ## Team pubilc repository
 [Elastic_Search_repository](https://github.com/zijunmei/Software_Assurance)
 
