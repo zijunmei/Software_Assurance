@@ -28,13 +28,13 @@
 ## Description of the Open-Source Project (unassigned)
 
 
-## Licensing Information of Elastic Search (unassigned)
+## Licensing Information of Elastic Stack (unassigned)
   
     
 ## Contribution and Agreements (unassigned)
 
 
-## Security Related History of Elastic Search (unassigned)
+## Security Related History of Elastic Stack (unassigned)
   
     
 ## Reflection (Team leader)
