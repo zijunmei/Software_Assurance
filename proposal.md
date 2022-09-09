@@ -32,17 +32,19 @@ Elastic Search provides permission and access control feature which just satisfy
 
   
 
-## 2. Motivation of the Project (unassigned)
-  
+## 2. Motivation of the Project (Zijun)
+During the planning phase of the project, our team agreed after discussion that we needed to ensure that our project was acceptable to each of us. That is, the selected project should ideally meet our technical preferences, interest preferences, and just background. The reality was that after careful research we found it difficult to find a project that would meet the preferences of all members. Therefore, after the first meeting we decided that everyone should look for two or three projects that they were interested in and vote on the final project at the second meeting.
 
-## 3. Description of the Open-Source Project (unassigned)
+At the second meeting we proposed 8 projects, and after discussion we eliminated 5 of them. We finally decided to seek Dr. Gandhi's advice with these three projects. In the end we chose Elastic Search as our open source software. First of all, this open source software has a wide variety of application scenarios as a search engine. Correspondingly, it also has a very developed open source community. The developer documentation is also complete, and the security features are clear. Although we are not familiar with this software, we can easily find information about this software on the web (tutorials, technical principles, architecture, etc.). This will help us to start the rest of the project.
 
-## 4. Licensing Information of Elastic Search (unassigned)
+## 3. Description of the Open-Source Project (Jeremy)
+
+## 4. Licensing Information of Elastic Search (Jeremy)
     
-## 5. Contribution and Agreements (unassigned)
+## 5. Contribution and Agreements (Charlie)
 
-## 6. Security Related History of Elastic Search (unassigned)
+## 6. Security Related History of Elastic Search (Charlie)
   
-## 7. Reflection (unassigned)
+## 7. Reflection (Mustapha)
   
     
