@@ -30,13 +30,21 @@ Let's say a hospital is seeking a technology capable of enterprise-level search 
 ## 3. Description of the Open-Source Project (unassigned)
 
 
+<<<<<<< HEAD
 ## 4. Licensing Information of Elastic Search (unassigned)
+=======
+## Licensing Information of Elastic Stack (unassigned)
+>>>>>>> 9726e19e9e677dcc0a0010782fb916f1920ea4b3
   
     
 ## 5. Contribution and Agreements (unassigned)
 
 
+<<<<<<< HEAD
 ## 6. Security Related History of Elastic Search (unassigned)
+=======
+## Security Related History of Elastic Stack (unassigned)
+>>>>>>> 9726e19e9e677dcc0a0010782fb916f1920ea4b3
   
     
 ## 7. Reflection (unassigned)
