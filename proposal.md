@@ -39,7 +39,11 @@ At the second meeting we proposed 8 projects, and after discussion we eliminated
 
 ## 3. Description of the Open-Source Project (Jeremy)
 
+Description
+
 ## 4. Licensing Information of Elastic Search (Jeremy)
+    
+    License 
     
 ## 5. Contribution and Agreements (Charlie)
 
