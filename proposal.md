@@ -7,7 +7,9 @@
 
 Data is an important company asset, and different viewers should only be able to search for data that meets his permission level. Enterprise-level search supports comprehensive permission management configuration of data sources to meet enterprises' data security browsing needs.  
 
-Let's say a hospital is seeking a technology capable of enterprise-level search engines for building their system based on PII/HIPAA rules. They require the search engine to be able to adjust the search results based on the visitor's search privileges. For example, a visitor with security level 1 will not be able to access information with a security level higher than 1. So the search engine would only return information for level 1 and obscure the higher level information and rank it by relevance. This need effectively protects the patient's personally identifiable information as well as other important information(such as Protected health information) from being easily compromised.
+Let's say a hospital is seeking a technology capable of enterprise-level search engines for building their system based on PII/HIPAA rules. They require the search engine to be able to adjust the search results based on the visitor's search privileges. For example, a visitor with security level 1 will not be able to access information with a security level higher than 1. So the search engine would only return information for level 1 and obscure the higher level information and rank it by relevance. This need effectively protects the patient's personally identifiable information as well as other important information(such as Protected health information) from being easily compromised.  
+
+Elastic Search provides permission and access control feature which just satisfy the reqiurement described above. Elasticsearch restricts search behavior by predetermining access attributes (including levels) for files, ensuring that files and information are presented only to visitors of the appropriate level.
 
 ### 1.1 Systems Engineering View (Mustapha)
 (Here should be the link of the view) 
