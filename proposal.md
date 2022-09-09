@@ -20,10 +20,17 @@ Elastic Search provides permission and access control feature which just satisfy
   
     
 
-### 1.3 List of Security Features (Mustapha)
-(Here should be the list of the features)
+### 1.3 List of Security Features (Zijun)
+- Permisson and access control
+    - Ensure proper visibility results and information based on pre-determined access attributes known as document-level permissions
+- Preventing unauthorized access
+    - Provide a standalone authentication mechanism that enables users to quickly password-protect their cluster.
+- Preserving the integrity of user's data
+    - TLS is used to protect the integrity of users' data from tampering and also to provide confidentiality by encrypting communications within the cluster.
+- Maintaining an audit trail
+    - A feature is provided to log access information and design audit levels to help monitor system conditions as well as help diagnose operational problems.
+
   
-    
 
 ## 2. Motivation of the Project (unassigned)
   
