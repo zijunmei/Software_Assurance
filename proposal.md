@@ -53,7 +53,7 @@ Description
 ## 7. Reflection (Mustapha)
 At the beginning, communication between team members was not as expected.
 But since then the team started using Discord mobile app for our team's group chat to get the attention of everyone.
-We had in-person meeting one time and zoom meetings to to talk about the project proposal.
+We had in-person meeting one time and zoom meetings to talk about the project proposal and split up the work.
 Unfortunately, one team member had to drop from the class and we had to reassign some of his tasks between the other team members.<br/>
 
 The team had few options on the open-source software to use for this class project.
