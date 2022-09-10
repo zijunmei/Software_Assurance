@@ -13,7 +13,7 @@ Elastic Search provides permission and access control feature which just satisfy
 
 ### 1.1 Systems Engineering View (Mustapha)
 (Here should be the link of the view) 
-  
+  ![System Engineering View](images/SoftwareAssurance.jpg "System Engineering View") 
     
 ### 1.2 Perceived Threats (Mustapha)
 (Here should be the description of the Perceived Threats)  
