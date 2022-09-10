@@ -11,9 +11,8 @@ Let's say a hospital is seeking a technology capable of enterprise-level search 
 
 Elastic Search provides permission and access control feature which just satisfy the reqiurement described above. Elasticsearch restricts search behavior by predetermining access attributes (including levels) for files, ensuring that files and information are presented only to visitors of the appropriate level.
 
-### 1.1 Systems Engineering View (Mustapha)
-(Here should be the link of the view) 
-  ![System Engineering View](images/SoftwareAssurance.jpg "System Engineering View") 
+### 1.1 Systems Engineering View (Mustapha) 
+  ![System Engineering View](images/SystemEngineeringView.jpg "System Engineering View") 
     
 ### 1.2 Perceived Threats (Mustapha)
 (Here should be the description of the Perceived Threats)  
