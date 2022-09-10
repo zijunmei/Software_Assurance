@@ -2,16 +2,16 @@
 # Open-Source Project: Elastic Stack  
 ## 0. Project memebrs and resource links
 ### Members
-    - Mustapha (@sammy-uno)
-    - Zijun (@zijunmei)
-    - Charlie (@cbotdorf)
-    - Jeremy (@oreb379)
+- Mustapha (@sammy-uno): Team leader, Technical
+- Zijun (@zijunmei): Project management, Technical
+- Charlie (@cbotdorf): Writing/Documenting, Reviewer
+- Jeremy (@oreb379): Writing/Documenting, Reviewer
 ### Links
-    * [Team_project_repository](https://github.com/zijunmei/Software_Assurance)  
+* [Team project repository](https://github.com/zijunmei/Software_Assurance)  
   
-    * [Team_Project_Board](https://github.com/users/zijunmei/projects/2)
+* [Project Board](https://github.com/users/zijunmei/projects/2)
       
-    * [Open_source_software_repository](https://github.com/elastic/elasticsearch)
+* [Open source software repository(Elastic)](https://github.com/elastic/elasticsearch)
 ## 1. Hypothetical Operational Environment (Zijun)
 
 Data is an important company asset, and different viewers should only be able to search for data that meets his permission level. Enterprise-level search supports comprehensive permission management configuration of data sources to meet enterprises' data security browsing needs.  
