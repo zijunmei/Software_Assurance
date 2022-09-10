@@ -1,9 +1,17 @@
 # CYBR 8420 - Project Proposal
 # Open-Source Project: Elastic Stack  
-## 0. Project resources links
-    * [Team project repository](https://github.com/zijunmei/Software_Assurance)
-    * [Team Project Board](https://github.com/users/zijunmei/projects/2)
-    * [Open source software repository](https://github.com/elastic/elasticsearch)
+## 0. Project memebrs and resource links
+### Members
+    - Mustapha (@sammy-uno)
+    - Zijun (@zijunmei)
+    - Charlie (@cbotdorf)
+    - Jeremy (@oreb379)
+### Links
+    * [Team_project_repository](https://github.com/zijunmei/Software_Assurance)  
+  
+    * [Team_Project_Board](https://github.com/users/zijunmei/projects/2)
+      
+    * [Open_source_software_repository](https://github.com/elastic/elasticsearch)
 ## 1. Hypothetical Operational Environment (Zijun)
 
 Data is an important company asset, and different viewers should only be able to search for data that meets his permission level. Enterprise-level search supports comprehensive permission management configuration of data sources to meet enterprises' data security browsing needs.  
