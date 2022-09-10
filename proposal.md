@@ -51,5 +51,16 @@ Description
 ## 6. Security Related History of Elastic Search (Charlie)
   
 ## 7. Reflection (Mustapha)
+At the beginning, communication between team members was not as expected.
+But since then the team started using Discord mobile app for our team's group chat to get the attention of everyone.
+We had in-person meeting one time and zoom meetings to to talk about the project proposal.
+Unfortunately, one team member had to drop from the class and we had to reassign some of his tasks between the other team members.<br/>
+
+The team had few options on the open-source software to use for this class project.
+We ended up selecting Elasticsearch for the reaons mentioned before.  
+
+The team starts to be more organized in splitting up the tasks using Github project board.
+We are also using the feature branch workflow in our repository to collaborate on source files check in.
+Next project assignments will have more team collaboration and everything will run smoothly.
   
     
