@@ -49,7 +49,9 @@ At the second meeting we proposed 8 projects, and after discussion we eliminated
 
 ## 3. Description of the Open-Source Project (Jeremy)
 
-Description
+Elasticsearch is an open-source software that is primarily used in data analytics as a powerful and highspeed search engine. This application is used to search enterprise databases with large quantities of data and then organize the output in a usable form of information to assist the user in a decision-making process. Elasticsearch is comprised of three main components, which are commonly referred to as the Elastic Stack. The stack consists of Elasticsearch, Logstash, and Kibana. The distributed architecture coupled with a clustering approach allows the software to be a highly scalable solution. 
+Elasticsearch is developed in Java and built on Apache Lucene. Apache Lucene is also an open-source Java based software that is supported by the Apache Software Foundation. The documentation source of Elasticsearch is generally saved on the original JSON document. Elasticsearch is innovative from the standpoint of compatibility and scalability. 
+Elasticsearch has over 63,000 commits executed with over 1,800 participants during its lifespan. Elasticsearch has over 2,000,000 lines of code. Most of its development happened in the few months after it launched in 2018 and has been consistently updated to the present day. Elasticsearch is used by large and small companies. Some of the most popular companies that utilized this software include but are not limited to Walmart, Netflix, Uber, Microsoft, and Ebay. This has made Elasticsearch one of the most popular open-source tools available for searching and managing bigdata. Elasticsearch can be deployed with Amazon Web services, Google Cloud Platform, and Microsoft Azure. Because they’re compatible with major entities in the cloud, database management and security space their exposure as one of the best tools at the enterprise level has gradually increased.   
 
 ## 4. Licensing Information of Elastic Search (Jeremy)
     
