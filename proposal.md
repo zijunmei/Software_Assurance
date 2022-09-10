@@ -70,15 +70,15 @@ The Elasticsearch community is a very open and welcoming space that provides ind
 [Elastic Contributor Program](https://www.elastic.co/community/contributor)
 
 ### Guidelines:
-•	Bug reporting: Before opening a bug, it should be tested with the newest version of Elasticsearch to verify it hasn’t already been addressed. If the bug is still prevalent search for similar issues already opened. Then, open an issue with a test case to confirm the bug’s existence with as much information provided as possible.
-•	Feature requests: Search for any related feature requests and open an issue describing the requested feature and why it should be added.
-•	Contributing: Before contributing to any open issues the contributor should discuss their ideas in the issue first, to cut back on overlapping work or confusion.
-•	Java formatting: Java files should adhere to the Java Language Formatting Guidelines provided.
-•	Javadoc: All code should have Javadoc that explains why the code was used and adds value to the documentation.
-•	License headers: All contributed Java files are required to have the provided license header, files covered by the Elastic license should be in the x-pack directory and should use the alternative license header.
-•	Testing: Before changes are submitted it is required to test the changes by running the test suite ./gradlew check.
-•	Class contributions: Contributions as part of a class are accepted but contributing should not be mandatory as part of a class. This could cause an influx of activity and PR’s will not be rushed for class deadlines.
-•	Contributor Agreement: All contributors must sign a [Contributor License Agreement](https://www.elastic.co/contributor-agreement/) so Elasticsearch can distribute the contributions without restriction. Contributors still retain copyright ownership, but permission cannot be withdrawn. Contributors can either sign an Individual CLA or a Corporate CLA depending on within what scope the contribution was originally developed.
+-	Bug reporting: Before opening a bug, it should be tested with the newest version of Elasticsearch to verify it hasn’t already been addressed. If the bug is still prevalent search for similar issues already opened. Then, open an issue with a test case to confirm the bug’s existence with as much information provided as possible.
+-	Feature requests: Search for any related feature requests and open an issue describing the requested feature and why it should be added.
+-	Contributing: Before contributing to any open issues the contributor should discuss their ideas in the issue first, to cut back on overlapping work or confusion.
+-	Java formatting: Java files should adhere to the Java Language Formatting Guidelines provided.
+-	Javadoc: All code should have Javadoc that explains why the code was used and adds value to the documentation.
+-	License headers: All contributed Java files are required to have the provided license header, files covered by the Elastic license should be in the x-pack directory and should use the alternative license header.
+-	Testing: Before changes are submitted it is required to test the changes by running the test suite ./gradlew check.
+-	Class contributions: Contributions as part of a class are accepted but contributing should not be mandatory as part of a class. This could cause an influx of activity and PR’s will not be rushed for class deadlines.
+-	Contributor Agreement: All contributors must sign a [Contributor License Agreement](https://www.elastic.co/contributor-agreement/) so Elasticsearch can distribute the contributions without restriction. Contributors still retain copyright ownership, but permission cannot be withdrawn. Contributors can either sign an Individual CLA or a Corporate CLA depending on within what scope the contribution was originally developed.
 
 
 ## 6. Security Related History of Elastic Search (Charlie)
