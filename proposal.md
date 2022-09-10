@@ -54,8 +54,11 @@ Elasticsearch is developed in Java and built on Apache Lucene. Apache Lucene is 
 Elasticsearch has over 63,000 commits executed with over 1,800 participants during its lifespan. Elasticsearch has over 2,000,000 lines of code. Most of its development happened in the few months after it launched in 2018 and has been consistently updated to the present day. Elasticsearch is used by large and small companies. Some of the most popular companies that utilized this software include but are not limited to Walmart, Netflix, Uber, Microsoft, and Ebay. This has made Elasticsearch one of the most popular open-source tools available for searching and managing bigdata. Elasticsearch can be deployed with Amazon Web services, Google Cloud Platform, and Microsoft Azure. Because they’re compatible with major entities in the cloud, database management and security space their exposure as one of the best tools at the enterprise level has gradually increased.   
 
 ## 4. Licensing Information of Elastic Search (Jeremy)
-    
-    License 
+
+“We are moving our Apache 2.0-licensed source code in Elasticsearch and Cabana to be dual licensed under the Elastic License and Server Side Public License (SSPL), giving users the choice of which license to apply” (FAQ License Change, elastic.co).  
+ 
+FAQ on 2021 License Change. https://www.elastic.co/pricing/faq/licensing 
+ 
     
 ## 5. Contribution and Agreements (Charlie)
 
