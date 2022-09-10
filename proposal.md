@@ -1,8 +1,9 @@
 # CYBR 8420 - Project Proposal
 # Open-Source Project: Elastic Stack  
-## Team pubilc repository
-[Elastic_Search_repository](https://github.com/zijunmei/Software_Assurance)
-
+## 0. Project resources links
+    -[Team project repository](https://github.com/zijunmei/Software_Assurance)
+    -[Team Project Board](https://github.com/users/zijunmei/projects/2)
+    -[Open source software repository](https://github.com/elastic/elasticsearch)
 ## 1. Hypothetical Operational Environment (Zijun)
 
 Data is an important company asset, and different viewers should only be able to search for data that meets his permission level. Enterprise-level search supports comprehensive permission management configuration of data sources to meet enterprises' data security browsing needs.  
@@ -34,9 +35,9 @@ Elastic Search provides permission and access control feature which just satisfy
   
 
 ## 2. Motivation of the Project (Zijun)
-During the planning phase of the project, our team agreed after discussion that we needed to ensure that our project was acceptable to each of us. That is, the selected project should ideally meet our technical preferences, interest preferences, and knowledge background. The reality was that after careful research we found that it is difficult to find a project which could meet the preferences of all members. Therefore, after the first meeting we decided that everyone should look for two or three projects that they were interested in and vote on the final project at the second meeting.
+The process of selecting open source projects is tough. During the planning phase of the project, our team agreed after discussion that we needed to ensure that our project was acceptable to each of us. That is, the selected project should ideally meet our technical preferences, interest preferences, and knowledge background. The reality was that after careful research we found that it is difficult to find a project which could meet the preferences of all members. Therefore, after the first meeting we decided that everyone should look for two or three projects that they were interested in and vote on the final project at the second meeting.
 
-At the second meeting we proposed 8 projects, and after discussion we eliminated 5 of them. We finally decided to ask for Dr. Gandhi's advice with these three projects. In the end we chose Elastic Search as our open source software. First of all, this open source software has a wide variety of application scenarios as a search engine. Correspondingly, it also has a very developed open source community. The developer documentation is also complete, and the security features are clear. Although we are not familiar with this software, we can easily find information about this software on the web (tutorials, technical principles, architecture, etc.). This will help us to start the rest of the project.
+At the second meeting we proposed 8 projects, and after discussion we eliminated 5 of them. We finally decided to ask for Dr. Gandhi's advice with these three projects.From his advice we understood that we had to find a complete software and that could give the user certain security features. In the end we chose Elastic Search as our open source software. First of all, this open source software has a wide variety of application scenarios as a search engine. Correspondingly, it also has a very developed open source community. The developer documentation is also complete, and the security features are clear. Although we are not familiar with this software, we can easily find information about this software on the web (tutorials, technical principles, architecture, etc.). Elasticsearch as the  topic of our analysis, its main programming language is java (99%). All of our team has some experience in java programming, and this will help us to start the rest of the project. Our goal is to analyze the security features of Elasticsearch and to analyze and test it for possible vulnerabilities(Such as NoSQL injection,etc).
 
 ## 3. Description of the Open-Source Project (Jeremy)
 
