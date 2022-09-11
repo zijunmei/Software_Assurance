@@ -1,6 +1,6 @@
 # CYBR 8420 - Project Proposal
 # Open-Source Project: Elasticsearch  
-## 0. Project memebrs and resource links
+## 0. Project members and resource links
 ### Members
 - Mustapha (@sammy-uno): Team leader, Technical
 - Zijun (@zijunmei): Project management, Technical
