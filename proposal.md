@@ -55,7 +55,9 @@ Elasticsearch has over 63,000 commits executed with over 1,800 participants duri
 
 ## 4. Licensing Information of Elastic Search (Jeremy)
 
-“We are moving our Apache 2.0-licensed source code in Elasticsearch and Cabana to be dual licensed under the Elastic License and Server Side Public License (SSPL), giving users the choice of which license to apply” (FAQ License Change, elastic.co).  
+Elasticsearch has updated their licensing options to provide users with a dual-licensing agreement. This license will work with users making updates to Elasticsearch and Kibana. “We are moving our Apache 2.0-licensed source code in Elasticsearch and Cabana to be dual licensed under the Elastic License and Server Side Public License (SSPL), giving users the choice of which license to apply” (FAQ License Change, elastic.co).  
+Elasticsearch has a detailed process to allow people the opportunity to make contributions to the community. The Elastic Contributor Program was created in 2020. An individual would need to create an account with their personal information. This is important so that their contributions can be recognized as well as providing a level of accountability for what's published under a specific user account. Once the profile is created for a user, they will be able to make contributions as well as validate the contributions of other users. 
+Elasticsearch requires contributors to sign a contributor license agreement (CLA). This agreement between the user and Elasticsearch was built in order to assign credit for the contribution as well as designation ownership of the intellectual property that was created. Elasticsearch does not take ownership of contributed code, but it will provide the user with the option to designation themselves or their company as the intellectual property owner. 
  
 FAQ on 2021 License Change. https://www.elastic.co/pricing/faq/licensing 
  
