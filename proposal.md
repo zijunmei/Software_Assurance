@@ -86,6 +86,20 @@ The Elasticsearch community is a very open and welcoming space that provides ind
 
 
 ## 6. Security Related History of Elastic Search (Charlie)
+Throughout Elasticsearch’s lifetime there have been many security changes implemented. The [release notes]( https://www.elastic.co/guide/en/elasticsearch/reference/current/es-release-notes.html) of each Elasticsearch version detail any changes to authentication, authorization, and security that take place. Recently, one of the most notable changes has been automatically enabling and configuring security when the software is first run, which was rolled out in Elasticsearch 8.0. Whereas in previous versions security was disabled by default and had to be enabled manually. The current version of Elasticsearch is 8.4.1 and although it may not have implemented any security changes, 8.4.0 addressed several.
+
+Some of these security changes are instigated by vulnerabilities discovered that require remediation. Elastic maintains a list of these [security issues]( https://www.elastic.co/community/security) on their website. These issues not only include Elasticsearch vulnerabilities, but they also include vulnerabilities from other applications that could affect Elasticsearch. Most recently listed was a vulnerability discovered with Java JDK 15. Elastic also informs users of these issues through announcements. These announcements include the security issue’s summary and steps for remediation, which are posted in a [Security Announcements](https://discuss.elastic.co/c/announcements/security-announcements/31) forum.
+
+Elastic also has a [HackerOne bug bounty program](https://hackerone.com/elastic?type=team) which rewards user’s for discovering and reporting vulnerabilities that affect one of Elastic’s products. Or alternatively security issues can be reported to security@elastic.co.
+
+### Vulnerabilities:
+Elasticsearch has had 23 [vulnerabilities](https://www.cvedetails.com/vulnerability-list/vendor_id-16559/product_id-51138/Elastic-Elasticsearch.html) discovered since it was first launched in 2010. The first vulnerability was discovered in 2015 involving remote code execution. Since then, there have been a steady stream of vulnerabilities discovered every year. Currently there have been 2 vulnerabilities this year.  
+
+| CVE ID         | Publish Date | Score | Summary | Remediation                    |
+|:--------------:|:------------:|:-----:| ------- | ------------------------------ |
+| CVE-2022-23712 | 2022-06-06   | 5.0   | A Denial of Service flaw was discovered in Elasticsearch. Using this vulnerability, an unauthenticated attacker could forcibly shut down an Elasticsearch node with a specifically formatted network request. | The issue is resolved in 8.2.1 |
+| CVE-2022-23708 | 2022-03-03   | 4.0   | A flaw was discovered in Elasticsearch 7.17.0’s upgrade assistant, in which upgrading from version 6.x to 7.x would disable the in-built protections on the security index, allowing authenticated users with * index permissions access to this index. | Elasticsearch 8.2.1 and 7.17.4 are packaged with OpenJDK 18.0.1 which resolves this issue. See for details. |
+
   
 ## 7. Reflection (Mustapha)
 At the beginning, communication between team members was not as expected.
