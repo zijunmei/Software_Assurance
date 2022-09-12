@@ -1,5 +1,5 @@
 # Software_Assurance Group 4
-## Team member
+## Team members
 - Mustapha (Team leader, Technical): @sammy-uno
 - Zijun (Project management, Technical): @zijunmei
 - Charlie (Writing/Documenting, Reviewer): @cbotdorf
