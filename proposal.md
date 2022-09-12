@@ -26,9 +26,10 @@ Elastic Search provides permission and access control feature which just satisfy
 ### 1.2 Perceived Threats (Mustapha)
 - Malicious patients data breach from Elasticsearch data clusters
 - Unauthorized access to patient PII/PHI data from health care personnel
-- Elasticsearch resiliency issues
-- Data loss due to system failure, disaster or intentional/unintential human errors
-- Elasticsearch security is not enabled by default. If an Elasticsearch installation left without security set then it can be exploited to access data 
+- Elasticsearch resiliency issues to hardware and network failures
+- Data loss/corruption due to system failure, disaster or intentional/unintential human errors
+- Malformed/Arbitrary search queries to Elasticsearch may reveal sensitive information
+- Elasticsearch security configuration settings are complex. If any settings left without proper security values then it can be exploited to access data 
   
 ### 1.3 List of Security Features (Zijun)
 - Permisson and access control
