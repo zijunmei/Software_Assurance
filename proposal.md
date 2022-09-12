@@ -34,7 +34,7 @@ Elastic Search provides permission and access control features that satisfy the 
 
   
 ### 1.3 List of Security Features
-The security features of Elasticsearch are documented here [Elastic security features](https://www.elastic.co/guide/en/elasticsearch/reference/current/secure-cluster.html)<br/>
+The security features of Elasticsearch are documented here [Elastic security features](https://www.elastic.co/guide/en/elasticsearch/reference/current/secure-cluster.html)<br/><br/>
 The following are the main security features to protect the Elasticsearch cluster and the data it contains:<br/>
 - Permission and access control
     - Ensure proper visibility results and information based on pre-determined access attributes known as document-level permissions
