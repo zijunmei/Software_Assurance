@@ -12,7 +12,7 @@
 * [Project Board](https://github.com/users/zijunmei/projects/2)
       
 * [Open source software repository (Elasticsearch)](https://github.com/elastic/elasticsearch)
-## 1. Hypothetical Operational Environment (Zijun)
+## 1. Hypothetical Operational Environment
 
 Data is an important company asset, and different viewers should only be able to search for data that meets his permission level. Enterprise-level search supports comprehensive permission management configuration of data sources to meet enterprises' data security browsing needs.  
 
@@ -20,10 +20,10 @@ Let's say a hospital is seeking a technology capable of enterprise-level search 
 
 Elastic Search provides permission and access control feature which just satisfy the reqiurement described above. Elasticsearch restricts search behavior by predetermining access attributes (including levels) for files, ensuring that files and information are presented only to visitors of the appropriate level.
 
-### 1.1 System Engineering View (Mustapha) 
+### 1.1 System Engineering View 
   ![System Engineering View](images/SystemEngineeringView.jpg "System Engineering View") 
     
-### 1.2 Perceived Threats (Mustapha)
+### 1.2 Perceived Threats
 - Malicious patients data breach from Elasticsearch data clusters
 - Unauthorized access to patient PII/PHI data from health care personnel
 - Elasticsearch resiliency issues to hardware and network failures
@@ -31,7 +31,7 @@ Elastic Search provides permission and access control feature which just satisfy
 - Malformed/Arbitrary search queries to Elasticsearch may reveal sensitive information
 - Elasticsearch security configuration settings are complex. If any settings left without proper security values then it can be exploited to access data 
   
-### 1.3 List of Security Features (Zijun)
+### 1.3 List of Security Features
 - Permisson and access control
     - Ensure proper visibility results and information based on pre-determined access attributes known as document-level permissions
 - Preventing unauthorized access
@@ -43,12 +43,12 @@ Elastic Search provides permission and access control feature which just satisfy
 
   
 
-## 2. Motivation of the Project (Zijun)
+## 2. Motivation of the Project
 The process of selecting open source projects is tough. During the planning phase of the project, our team agreed after discussion that we needed to ensure that our project was acceptable to each of us. That is, the selected project should ideally meet our technical preferences, interest preferences, and knowledge background. The reality was that after careful research we found that it is difficult to find a project which could meet the preferences of all members. Therefore, after the first meeting we decided that everyone should look for two or three projects that they were interested in and vote on the final project at the second meeting.
 
 At the second meeting we proposed 8 projects, and after discussion we eliminated 5 of them. We finally decided to ask for Dr. Gandhi's advice with these three projects.From his advice we understood that we had to find a complete software and that could give the user certain security features. In the end we chose Elastic Search as our open source software. First of all, this open source software has a wide variety of application scenarios as a search engine. Correspondingly, it also has a very developed open source community. The developer documentation is also complete, and the security features are clear. Although we are not familiar with this software, we can easily find information about this software on the web (tutorials, technical principles, architecture, etc.). Elasticsearch as the  topic of our analysis, its main programming language is java (99%). All of our team has some experience in java programming, and this will help us to start the rest of the project. Our goal is to analyze the security features of Elasticsearch and to analyze and test it for possible vulnerabilities(Such as NoSQL injection,etc).
 
-## 3. Description of the Open-Source Project (Jeremy)
+## 3. Description of the Open-Source Project
 
 Elasticsearch is an open-source software that is primarily used in data analytics as a powerful and highspeed search engine. This application is used to search enterprise databases with large quantities of data and then organize the output in a usable form of information to assist the user in a decision-making process. Elasticsearch is comprised of three main components, which are commonly referred to as the Elastic Stack. The stack consists of Elasticsearch, Logstash, and Kibana. At its core, Elasticsearch is a search engine and highly usable database. Kibana has enhanced their core offerings by adding the visualization aspect to the data retrieval. By adding a dashboard tool like Kibana for visual management of data, Elasticsearch has strengthened its marketability. The distributed architecture coupled with a clustering approach allows the software to be a highly scalable solution.  
 
@@ -56,7 +56,7 @@ Elasticsearch is developed in Java and built on Apache Lucene. Apache Lucene is 
 
 Elasticsearch has over 63,000 commits executed with over 1,800 participants during its lifespan. Elasticsearch has over 2,000,000 lines of code. Most of its development happened in the few months after it launched in 2018 and has been consistently updated to the present day. Elasticsearch is used by large and small companies. Some of the most popular companies that utilize this software include but are not limited to Walmart, Netflix, Uber, Microsoft, and Ebay. This has made Elasticsearch one of the most popular open-source tools available for searching and managing bigdata. Elasticsearch can be deployed with Amazon Web services, Google Cloud Platform, and Microsoft Azure. Because they’re compatible with major entities in the cloud, database management and security space their exposure as one of the best tools at the enterprise level has gradually increased.     
 
-## 4. Licensing Information of Elastic Search (Jeremy)
+## 4. Licensing Information of Elastic Search
 
 Elasticsearch has updated their licensing options to provide users with a dual-licensing agreement. This license will work with users making updates to Elasticsearch and Kibana. “We are moving our Apache 2.0-licensed source code in Elasticsearch and Cabana to be dual licensed under the Elastic License and Server Side Public License (SSPL), giving users the choice of which license to apply” (FAQ License Change, elastic.co).  
 Elasticsearch has a detailed process to allow people the opportunity to make contributions to the community. The Elastic Contributor Program was created in 2020. An individual would need to create an account with their personal information. This is important so that their contributions can be recognized as well as providing a level of accountability for what's published under a specific user account. Once the profile is created for a user, they will be able to make contributions as well as validate the contributions of other users. 
@@ -65,7 +65,7 @@ Elasticsearch requires contributors to sign a contributor license agreement (CLA
 FAQ on 2021 License Change. https://www.elastic.co/pricing/faq/licensing 
  
     
-## 5. Contribution and Agreements (Charlie)
+## 5. Contribution and Agreements
 
 The Elasticsearch community is a very open and welcoming space that provides individuals with many different options for contributing to the project. They accept a variety of different contribution types including documentation, bug reports, feature requests, and code changes. They are also beginner friendly and include the labels `help wanted` in open issues where the community is looking for contributions, and `good first issue` in issues that they think would be great for new contributors. They even have developed the [Elastic Contributor Program](https://www.elastic.co/community/contributor) that rewards people for making contributions to the project, and gives the contributors a change to win prizes. However, because this is such a large project there are many guidelines on how project contributions should be made.
 
@@ -86,7 +86,7 @@ The Elasticsearch community is a very open and welcoming space that provides ind
 -	Contributor Agreement: All contributors must sign a [Contributor License Agreement](https://www.elastic.co/contributor-agreement/) so Elasticsearch can distribute the contributions without restriction. Contributors still retain copyright ownership, but permission cannot be withdrawn. Contributors can either sign an Individual CLA or a Corporate CLA depending on within what scope the contribution was originally developed.
 
 
-## 6. Security Related History of Elastic Search (Charlie)
+## 6. Security Related History of Elastic Search
 Throughout Elasticsearch’s lifetime there have been many security changes implemented. The [release notes]( https://www.elastic.co/guide/en/elasticsearch/reference/current/es-release-notes.html) of each Elasticsearch version detail any changes to authentication, authorization, and security that have taken place. One of the most notable recent changes has been automatically enabling and configuring security when the software is first run, which was rolled out in Elasticsearch 8.0. Whereas in previous versions security was disabled by default and had to be enabled manually. The current version of Elasticsearch is 8.4.1 and although it may not have implemented any security changes, 8.4.0 addressed several.
 
 Some of these security changes are instigated by vulnerabilities discovered that require remediation. Elastic maintains a list of these [security issues]( https://www.elastic.co/community/security) on their website. These issues not only include Elasticsearch vulnerabilities, but they also include vulnerabilities from other applications that could affect Elasticsearch. Most recently listed was a vulnerability discovered with Java JDK 15. Elastic also informs users of these issues through announcements. These announcements include the security issue’s summary and steps for remediation, which are posted in a [Security Announcements](https://discuss.elastic.co/c/announcements/security-announcements/31) forum.
@@ -102,7 +102,7 @@ Elasticsearch has had 23 [vulnerabilities](https://www.cvedetails.com/vulnerabil
 | CVE-2022-23708 | 2022-03-03   | 4.0   | A flaw was discovered in Elasticsearch 7.17.0’s upgrade assistant, in which upgrading from version 6.x to 7.x would disable the in-built protections on the security index, allowing authenticated users with * index permissions access to this index. | Elasticsearch 8.2.1 and 7.17.4 are packaged with OpenJDK 18.0.1 which resolves this issue. See for details. |
 
   
-## 7. Reflection (Mustapha)
+## 7. Reflection
 At the beginning, communication between team members was not as expected.
 But since then the team started using Discord mobile app for our team's group chat to get the attention of everyone.
 We had in-person meeting one time and zoom meetings to talk about the project proposal and split up the work.
