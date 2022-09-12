@@ -25,12 +25,13 @@ Elastic Search provides permission and access control features that satisfy the 
   ![System Engineering View](images/SystemEngineeringView.jpg "System Engineering View") 
     
 ### 1.2 Perceived Threats
-- Malicious patients data breach from Elasticsearch data clusters
-- Unauthorized access to patient PII/PHI data from health care personnel
-- Elasticsearch resiliency issues to hardware and network failures
-- Data loss/corruption due to system failure, disaster or intentional/unintential human errors
-- Malformed/Arbitrary search queries to Elasticsearch may reveal sensitive information
-- Elasticsearch security configuration settings are complex. If any settings left without proper security values then it can be exploited to access data 
+- Malicious patient data breaches from Elasticsearch data clusters.
+- Unauthorized access to patient PII/PHI data from health care personnel.
+- Elasticsearch resiliency issues to hardware and network failures.
+- Data loss/corruption due to system failure, disaster, or intentional/unintentional human errors.
+- Malformed/Arbitrary search queries to Elasticsearch may reveal sensitive information.
+- Elasticsearch security configuration settings are complex. If any settings are left without proper security values, then it can be exploited to access data.
+
   
 ### 1.3 List of Security Features
 - Permission and access control
@@ -106,16 +107,17 @@ Elasticsearch has had 23 [vulnerabilities](https://www.cvedetails.com/vulnerabil
 
   
 ## 7. Reflection
-At the beginning, communication between team members was not as expected.
-But since then the team started using Discord mobile app for our team's group chat to get the attention of everyone.
-We had in-person meeting one time and zoom meetings to talk about the project proposal and split up the work.
-Unfortunately, one team member had to drop from the class and we had to reassign some of his tasks between the other team members.<br/>
+In the beginning, communication between team members was not as expected.
+But since then, the team started using the Discord mobile app for our team's group chat to get the attention of everyone.
+We had in-person and zoom meetings once to discuss the project proposal and split the work.
+Unfortunately, one team member had to drop from the class, and we had to reassign some of his tasks to the other team members.<br/>
 
-The team had few options on the open-source software to use for this class project.
-We ended up selecting Elasticsearch for the reaons mentioned before.  
+The team had a few open-source software options for this class project.
+We ended up selecting Elasticsearch for the reasons mentioned before.  
 
-The team starts to be more organized in splitting up the tasks using Github project board.
-We are also using the feature branch workflow in our repository to collaborate on source files check in.
-Next project assignments will have more team collaboration and everything will run smoothly.
+The team was more organized in splitting tasks using the GitHub project board.
+We are also using the feature branch workflow in our repository to collaborate on source file check-in.
+Following project assignments will have more team collaboration, and everything will run smoothly.
+
   
     
