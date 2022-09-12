@@ -118,7 +118,8 @@ We had in-person and zoom meetings to discuss the project proposal and split the
 Unfortunately, one team member had to drop from the class, and we had to reassign some of his tasks to the other team members.<br/>
 
 The team had a few open-source software options for this class project.
-We ended up selecting Elasticsearch for the reasons mentioned before. The team was more organized in splitting tasks using the GitHub project board. We are also using the feature branch workflow in our repository to collaborate on source file check-in.
+We ended up selecting Elasticsearch for the reasons mentioned before. 
+The team members are all contributing, learning about Elasticsearch functionalities, and its security features. The team was more organized in splitting tasks using the GitHub project board. We are also using the feature branch workflow in our repository to collaborate on source file check-in.
 Following project assignments will have more team collaboration, and everything will run smoothly.
 
   
