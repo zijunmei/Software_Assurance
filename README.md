@@ -6,5 +6,6 @@
 - Jeremy (Writing/Documenting, Reviewer): @oreb379
 ## Project Deliverables
 - [Project Proposal](/project_proposal.md)
+- [Requirement](/Requirements_for_SSE.md)
 
 
