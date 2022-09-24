@@ -6,6 +6,8 @@
 User story: The hospital employee wants to be able to login to their Elasticsearch accounts so that they can use the function of Elasticsearch. 
 #### *Misuse case*
 In this case, the threats come from the *information thief* who try to gain the profit by selling the information of Hospital includes patient's information(ID, medical history, etc), hospital employee personal inforamtion(ID, address, insurrance, etc), and some other informations.<br>
+#### *Diagram*
+![The Diagram of User Login](/images/authentication_use_case——02.drawio.png)
 #### *Assessment* 
 The thief may try to crack the password of the employee, who has been stolen the username or ID, so that the thief can ilegally login the system with authorized account.  <br>
   
@@ -14,8 +16,7 @@ In the process, the thief will try to crack the user's password by trying variou
 Once the information thief has successfully obtained the login password, the [multi-factor authentication](https://www.elastic.co/guide/en/cloud/current/ec-account-user-settings.html#ec-account-security-mfa) is  an option for the user to secure their account. The Elasticsearch provides two approaches: Google authenticator and text messages to realize the two factor authentication. However, the information thief may use man-in-the-middle attack to bypass the authentication. For preventing this, the elastisearch forces to use [HTTPS](https://www.elastic.co/guide/en/elasticsearch/reference/master/modules-network.html) which can be used to securely communicate over HTTP using public-private key exchange. This prevents an attacker from having any use of the data he may be sniffing. The [IP filter](https://www.elastic.co/guide/en/elasticsearch/reference/current/ip-filtering.html) feature of Elasticsearch can also mitigates the attack is from the outside of hospital. <br>
   
 Based on the above analysis of the Elasticsearch development documentation, I noticed that the Elastisearch use [FIPS 140-2](https://www.elastic.co/guide/en/elasticsearch/reference/current/fips-140-compliance.html) as requirements for Cryptographic Modules. I believe that Elasticsearch basically satisfy the user requirements for secure login. There are sufficient countermeasures for threats from information thieves.
-#### *Diagram*
-[The Diagram of User Login](/images/authentication_use_case——02.drawio.png)
+
 ### 1.2 
 ### 1.3 
 ## Part 2: 
