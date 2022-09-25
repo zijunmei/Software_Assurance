@@ -24,6 +24,8 @@ Based on the above analysis of the Elasticsearch development documentation, I no
 A nurse working at a hospital should have the ability to store valid patient information into Elasticsearch for later use. She expects that the data stored in Elasticsearch will be correct and will not have any unauthorized changes or incorrectly stored data.
 #### *Misuse case*
 A financial thief wants the ability to perform unauthorized changes to patient data so they can phish for patients’ financial information or store malicious scripts to get higher level access to Elasticsearch’s database.
+#### *Diagram*
+![The Diagram of Storing Patient Data](https://user-images.githubusercontent.com/112530627/192171476-b3f06179-31cc-4f49-a7cb-de3c13aee996.png)
 
 ### 1.3 Access Patient Data in timely manner 
 #### *Use case*
