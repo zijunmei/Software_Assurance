@@ -28,7 +28,7 @@ by internal employees will impact the availability of the data needed for the cu
 calling in. The health information provided to patients are critical for their well-being and need to be 
 searched and retrieved fast from Elasticsearch data.
 #### *Diagram*
-![The Diagram of Access Patient Data in timely manner](/images/AccessPatientData.png)
+![The Diagram of Access Patient Data in timely manner](/images/AccessPatientData.jpg)
 #### *Assessment*
 Jack (the extortionist) launched a DOS attack on the hospital network to overload the Elasticsearch cluster nodes
 by repetitive malicious queries searches. His goal was to bring the hospital patient Elasticsearch data down.
