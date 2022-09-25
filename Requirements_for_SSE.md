@@ -18,7 +18,7 @@ Once the information thief has successfully obtained the login password, the [mu
 Based on the above analysis of the Elasticsearch development documentation, I noticed that the Elastisearch use [FIPS 140-2](https://www.elastic.co/guide/en/elasticsearch/reference/current/fips-140-compliance.html) as requirements for Cryptographic Modules. I believe that Elasticsearch basically satisfy the user requirements for secure login. There are sufficient countermeasures for threats from information thieves.
 
 ### 1.2 
-### 1.3 Access Patient Data in a timely manner 
+### 1.3 Access Patient Data in timely manner 
 #### *Use case*
 User story: The hospital customer service representative needs to access patient data stored in Elasticsearch nodes such as medical records,
 future doctor appointments, lab results and pharmacy prescriptions in a timely manner.
@@ -28,6 +28,7 @@ by internal employees will impact the availability of the data needed for the cu
 calling in. The health information provided to patients are critical for their well-being and need to be 
 searched and retrieved fast from Elasticsearch data.
 #### *Diagram*
+![The Diagram of Access Patient Data in timely manner](/images/AccessPatientData.png)
 #### *Assessment*
 Jack (the extortionist) launched a DOS attack on the hospital network to overload the Elasticsearch cluster nodes
 by repetitive malicious queries searches. His goal was to bring the hospital patient Elasticsearch data down.
