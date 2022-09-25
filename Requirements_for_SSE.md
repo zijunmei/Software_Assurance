@@ -20,7 +20,7 @@ Based on the above analysis of the Elasticsearch development documentation, I no
 ### 1.2 
 ### 1.3 
 ## Part 2: Security Review of Elasticsearch
-### Configurations issues
+### 2.1 Configurations issues
 The security configuration of Elasticsearch mainly includes the following points:
 - [Communication Traffic Encryption Configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/security-basic-setup.html) 
     - TLS on the HTTP layer it provides an additional layer of security to ensure that all communications to and from the cluster are encrypted.
@@ -57,7 +57,7 @@ To enable Elasticsearch audit logging, you need to add a configuration to the El
     <mark>  <br>
 After completing the configuration, the node needs to be restarted to take effect. [Here](https://www.elastic.co/guide/en/elasticsearch/reference/master/enable-audit-logging.html) is the descirption. After the audit logging function is turned on, there will be a file called "xxx_audit.json" in the log directory of the corresponding node, which will have relevant security events recorded in it.
 
-### Installation
+### 2.2 Installation
 Before [installing Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html), a newer version of Java(at least Java 8) is required. Then we can get the latest version of Elasticsearch from [Elastic's official website](elastic.co/downloads/elasticsearch). Elasticsearch can be used on multiple platforms, so it has a variety of different installation packages to meet the needs of different platforms. The installation instruction of each platform as following:
 - [Linux and MacOS](https://www.elastic.co/guide/en/elasticsearch/reference/current/targz.html)
 - [Windows .zip archive](https://www.elastic.co/guide/en/elasticsearch/reference/current/zip-windows.html)
@@ -65,7 +65,7 @@ Before [installing Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/
 - [rpm](https://www.elastic.co/guide/en/elasticsearch/reference/current/rpm.html)
 - [docker](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/docker.html)
 
-### Issues 
+### 2.3 Issues 
 The issues we found after reviewing the security documents of the Elasticsearch is that the open source version of Elasticsearch does not include LDAP、PKI, SAML, and Active Directory(AD) authentication features. In other words, the open source version of Elasticsearch only provides encrypted communication and [Naitive user authentication](https://www.elastic.co/guide/en/elasticsearch/reference/7.4/native-realm.html)features. In this case, once an organization wants to use the open source version of Elasticsearch, then they can only deploy it through the intranet and not provide the service to the public. Otherwise, They have to looking for a third-party security certification scheme for their system. The open source version of Elasticsearch does not have data protection features, and very easy to lead to online index or data may be accidentally deleted.<br>  
 Overall, our review of security documents identified several potentially dangerous behaviors leading to safety incidents.
 - No setting up Elasticsearch cluster security permissions. 
