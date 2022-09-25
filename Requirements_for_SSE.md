@@ -47,28 +47,28 @@ Elasticsearch security features provide some security settings to build a system
 The following security measures can be implemented to prevent such attacks:<br/><br/>
 **Config Elasticsearch query timeout**<br/>
 Query timeout set by default and can be adjusted as needed. 
-The [SQL JDBC Settings](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/sql-jdbc.html#sql-jdbc-installation) list the different JDBC settings available<br/>
+The [SQL JDBC Settings](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/sql-jdbc.html#sql-jdbc-installation) list the different JDBC settings available.<br/>
 
 **Setup Elasticsearch circuit breaker**<br/>
 The [Circuit breakers Settings](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/circuit-breaker-errors.html) are set to prevent the nodes from running out of JVM heap memory.
-This is to prevent queries with a large dataset result to run when they reach a specific memory threshold<br/>
+This is to prevent queries with a large dataset result to run when they reach a specific memory threshold.<br/>
 
 **Elasticsearch Monitoring dashboard**<br/>
 An Elasticsearch search offers different options to monitor Elasticsearch traffic.
-At the cluster level, [Cluster health API](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/cluster-health.html)<br/> are available to monitor the health of Elasticsearch cluster<br/>
+At the cluster level, [Cluster health API](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/cluster-health.html)<br/> are available to monitor the health of Elasticsearch cluster.<br/>
 
-[Cluster monitoring](https://www.elastic.co/guide/en/elasticsearch/reference/current/monitoring-production.html) can be configured to collect data to send it to monitoring dashboard<br/>
+[Cluster monitoring](https://www.elastic.co/guide/en/elasticsearch/reference/current/monitoring-production.html) can be configured to collect data to send it to monitoring dashboard.<br/>
 
-Tools from Elasticsearch stack (ELK) like Kibana has built in dashboard to send [XPACK alerts](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/xpack-alerting.html) to Elasticsearch Admin<br/>
+Tools from Elasticsearch stack (ELK) like Kibana has built in dashboard to send [XPACK alerts](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/xpack-alerting.html) to Elasticsearch Admin.<br/>
 
 **Set up a cluster for high availability**<br/>
-Elasticsearch offers some features to set up [High availability clusters](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/high-availability.html) in case of failures or to route traffic to other clusters in case of denial-of-service attacks for example<br/>
+Elasticsearch offers some features to set up [High availability clusters](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/high-availability.html) in case of failures or to route traffic to other clusters in case of denial-of-service attacks for example.<br/>
 
 Based on the Elasticsearch security features above and the other ones available, we can say 
 that Elasticsearch offers a rich set of security measures to protect the data and prevents availability attacks like the ones used in 
 our use case. 
 Elasticsearch is built with security in mind and it is evolving to adapt and implement new features to remediate new security risks findings
-[Elasticsearch latest release](https://www.elastic.co/guide/en/elasticsearch///reference/master/release-notes-8.4.0.html)
+[Elasticsearch latest release](https://www.elastic.co/guide/en/elasticsearch///reference/master/release-notes-8.4.0.html).
  
 
 ## Part 2: Security Review of Elasticsearch
@@ -116,7 +116,7 @@ Before [installing Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/
 - [docker](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/docker.html)
 
 ### 2.3 Issues 
-The issues we found after reviewing the security documents of the Elasticsearch is that the open source version of Elasticsearch does not include LDAP、PKI, SAML, and Active Directory(AD) authentication features. [Here](https://www.elastic.co/subscriptions) is the description. In other words, the open source version of Elasticsearch only provides encrypted communication and [Naitive user authentication](https://www.elastic.co/guide/en/elasticsearch/reference/7.4/native-realm.html)features. In this case, once an organization wants to use the open source version of Elasticsearch, then they can only deploy it through the intranet and not provide the service to the public. Otherwise, They have to looking for a third-party security certification scheme for their system. The open source version of Elasticsearch does not have data protection features, and very easy to lead to online index or data may be accidentally deleted.<br>  
+The issues we found after reviewing the security documents of the Elasticsearch is that the open source version of Elasticsearch does not include LDAP、PKI, SAML, and Active Directory(AD) authentication features. In other words, the open source version of Elasticsearch only provides encrypted communication and [Naitive user authentication](https://www.elastic.co/guide/en/elasticsearch/reference/7.4/native-realm.html)features. In this case, once an organization wants to use the open source version of Elasticsearch, then they can only deploy it through the intranet and not provide the service to the public. Otherwise, They have to looking for a third-party security certification scheme for their system. The open source version of Elasticsearch does not have data protection features, and very easy to lead to online index or data may be accidentally deleted.<br>  
 Overall, our review of security documents identified several potentially dangerous behaviors leading to safety incidents.
 - No setting up Elasticsearch cluster security permissions. 
 - Elasticsearch server exposed to the pubilc network.
