@@ -33,8 +33,8 @@ The security configuration of Elasticsearch mainly includes the following points
 
 *Communication traffic encryption configuration*  
 Communication traffic encryption includes internode communication and HTTP client communication.[Here](https://www.elastic.co/guide/en/elasticsearch/reference/7.16/configuring-tls.html#node-certificates) is the description.<br>
-- Internode communication
-Encryption for internode communication needs to be done by configuring the Elasticsearch. The encryption is done by configuring certificates and using ssl. The main purpose of internode communication Encryprtion is to 1. prevent illegal Elasticsearch nodes from joining the cluster and 2. prevent communication traffic from being listened to.<br>
+- Internodes communication
+Encryption for internodes communication needs to be done by configuring the Elasticsearch. The encryption is done by configuring certificates and using ssl. The main purpose of internode communication Encryprtion is to 1. prevent illegal Elasticsearch nodes from joining the cluster and 2. prevent communication traffic from being listened to.<br>
 - HTTP client communication
 Elasticsearch itself provides an http-based REST interface to the outside world, and the communication of this interface needs to be encrypted, which needs to be configured in elasticsearch.yml.<br>
 
