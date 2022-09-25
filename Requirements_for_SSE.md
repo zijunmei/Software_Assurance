@@ -22,7 +22,8 @@ Based on the above analysis of the Elasticsearch development documentation, I no
 ## Part 2: Security Review of Elasticsearch
 ### Configurations issues
 The security configuration of ES mainly includes the following points:
-- [TLS on the HTTP layer configuration]()
+- [TLS on the HTTP layer configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/security-basic-setup.html) 
+    TLS on the HTTP layer it provides an additional layer of security to ensure that all communications to and from the cluster are encrypted.
 - [User Authentication Configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/setting-up-authentication.html)
     Verify whether an account is a legitimate account.
 - [User Authorization Configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/authorization.html)
