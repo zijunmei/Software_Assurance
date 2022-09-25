@@ -22,7 +22,7 @@ Based on the above analysis of the Elasticsearch development documentation, I no
 ## Part 2: Security Review of Elasticsearch
 ### 2.1 Configurations issues
 The security configuration of Elasticsearch mainly includes the following points:
-- [Communication Traffic Encryption Configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/security-basic-setup.html) 
+- [Communication Encryption Configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/security-basic-setup.html) 
     - TLS on the HTTP layer it provides an additional layer of security to ensure that all communications to and from the cluster are encrypted.
 - [User Authentication Configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/setting-up-authentication.html)
     - Verify whether an account is a legitimate account.
@@ -31,8 +31,8 @@ The security configuration of Elasticsearch mainly includes the following points
 - [User Audit Logging Configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/enable-audit-logging.html)
     - Monitor the clusters for suspicious activity.<br>  
 
-**Communication traffic encryption configuration**  
-Communication traffic encryption includes internode communication and HTTP client communication.[Here](https://www.elastic.co/guide/en/elasticsearch/reference/7.16/configuring-tls.html#node-certificates) is the description.<br>
+**Communication encryption configuration**  
+Communication encryption includes internode communication and HTTP client communication.[Here](https://www.elastic.co/guide/en/elasticsearch/reference/7.16/configuring-tls.html#node-certificates) is the description.<br>
 - Internodes communication
 Encryption for internodes communication needs to be done by configuring the Elasticsearch. The encryption is done by configuring certificates and using ssl. The main purpose of internode communication Encryprtion is to 1. prevent illegal Elasticsearch nodes from joining the cluster and 2. prevent communication traffic from being listened to.<br>
 - HTTP client communication
