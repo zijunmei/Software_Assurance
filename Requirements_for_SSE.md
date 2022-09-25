@@ -70,6 +70,15 @@ our use case.
 Elasticsearch is built with security in mind and it is evolving to adapt and implement new features to remediate new security risks findings
 [Elasticsearch latest release](https://www.elastic.co/guide/en/elasticsearch///reference/master/release-notes-8.4.0.html).
  
+## Team Reflection
+Unfortunately, we lost another team member for this assignment. 
+The team had to adjust for the remaining tasks to complete this assigment.
+The first meeting for this assignment to review the deliverable didn't go well. 
+There were some misunderstandings how to build the use cases.
+The team caught up very quick by the second meeting and first drafts of the use cases were reviewed.
+The weekly team check-in with Dr. Gandi also helped to clarify some of the questions we had.
+The team members all contributed and we had good zoom meetings collaboration. 
+Going forward, the team will need to meet early on to review and understand the assignment's deliverables.
 
 ## Part 2: Security Review of Elasticsearch
 ### 2.1 Configurations issues
