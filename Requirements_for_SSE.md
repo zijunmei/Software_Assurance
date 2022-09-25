@@ -50,7 +50,7 @@ The Authorization capability of Elasticsearch uses a role-based access control a
 
 *Audit Logging Configuration*  
 To enable Elasticsearch audit logging, you need to add a configuration to the Elasticsearch configuration file elasticsearch.yml.  <br>
-    "xpack.security.audit.enabled:true"  <br>
+    **"xpack.security.audit.enabled:true"**  <br>
 After completing the configuration, the node needs to be restarted to take effect. [Here](https://www.elastic.co/guide/en/elasticsearch/reference/master/enable-audit-logging.html) is the descirption. After the audit logging function is turned on, there will be a file called "xxx_audit.json" in the log directory of the corresponding node, which will have relevant security events recorded in it.
 
 ### Installation
