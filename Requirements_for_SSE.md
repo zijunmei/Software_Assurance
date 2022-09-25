@@ -47,29 +47,22 @@ Elasticsearch security features provide some security settings to build a system
 The following security measures can be implemented to prevent such attacks:<br/><br/>
 **Config Elasticsearch query timeout**<br/>
 Query timeout set by default and can be adjusted as needed. 
-The link below gives the different JDBC settings available
-[SQL JDBC Settings](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/sql-jdbc.html#sql-jdbc-installation)<br/>
+The [SQL JDBC Settings](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/sql-jdbc.html#sql-jdbc-installation) list the different JDBC settings available<br/>
 
 **Setup Elasticsearch circuit breaker**<br/>
-The circuit breaker are set to prevent the nodes from running out of JVM heap memory.
-This is to prevent queries with a large dataset result 
-[Circuit breakers Settings](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/circuit-breaker-errors.html)<br/>
+The [Circuit breakers Settings](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/circuit-breaker-errors.html) are set to prevent the nodes from running out of JVM heap memory.
+This is to prevent queries with a large dataset result to run when they reach a specific memory threshold<br/>
 
 **Elasticsearch Monitoring dashboard**<br/>
 An Elasticsearch search offers different options to monitor Elasticsearch traffic.
-At the cluster level, Rest API are available to monitor the health of Elasticsearch cluster 
-[Cluster health API](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/cluster-health.html)<br/>
+At the cluster level, [Cluster health API](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/cluster-health.html)<br/> are available to monitor the health of Elasticsearch cluster<br/>
 
-The production cluster can be configured to collect data to send it to monitoring dashboard 
-[Cluster monitoring](https://www.elastic.co/guide/en/elasticsearch/reference/current/monitoring-production.html)<br/>
+[Cluster monitoring](https://www.elastic.co/guide/en/elasticsearch/reference/current/monitoring-production.html) can be configured to collect data to send it to monitoring dashboard<br/>
 
-Tools from Elasticsearch stack (ELK) like Kibana has built in dashboard to send alerts to Elasticsearch Admin
-[XPACK alerts](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/xpack-alerting.html)<br/>
+Tools from Elasticsearch stack (ELK) like Kibana has built in dashboard to send [XPACK alerts](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/xpack-alerting.html) to Elasticsearch Admin<br/>
 
 **Set up a cluster for high availability**<br/>
-Elasticsearch offers some features to set up high availability clusters in case of failures or to route traffic to other
-clusters in case of denial-of-service attacks for example
-[High availability clusters](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/high-availability.html)<br/>
+Elasticsearch offers some features to set up [High availability clusters](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/high-availability.html) in case of failures or to route traffic to other clusters in case of denial-of-service attacks for example<br/>
 
 Based on the Elasticsearch security features above and the other ones available, we can say 
 that Elasticsearch offers a rich set of security measures to protect the data and prevents availability attacks like the ones used in 
