@@ -1,6 +1,8 @@
 # CYBR 8420 - Requirements for Software Security Engineering
   
 ## Part 1: Use/Misuse Case Analysis
+Our use/misuse selection were based on the three principles of a secure System which are 
+Confidentiality, Integrity and Availability (CIA). Building a use case from each of those principles will give us some exposure and research on the different security threats our system of interest (Elasticsearch) will have to take in consideration. 
 ### 1.1 User Login
 #### *Use case*
 **User story:** The hospital employee wants to be able to login to their Elasticsearch accounts so that they can use the function of Elasticsearch. 
