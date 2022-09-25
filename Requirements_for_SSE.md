@@ -19,5 +19,20 @@ Based on the above analysis of the Elasticsearch development documentation, I no
 
 ### 1.2 
 ### 1.3 
-## Part 2: 
+## Part 2: Security Review of Elasticsearch
+### Configurations issues
+The security configuration of ES mainly includes the following points:
+- [TLS on the HTTP layer configuration]()
+- [User Authentication Configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/setting-up-authentication.html)
+    Verify whether an account is a legitimate account.
+- [User Authorization Configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/authorization.html)
+    Define which operations each account can do and which indexes it can access.)
+- [User Audit Logging Configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/enable-audit-logging.html)
+    Monitor the clusters for suspicious activity.
+*Authentication Configurations and issues*
+ES's x-pack suite provides basic account authentication with a feature called Realm. depending on the payment, the Realm module provides different authentication capabilities. The open source version of Elasticsearch only provides a local account service, which can be configured locally by setting it up in elasticsearch.yml. It can also be set up through the [security api](https://www.elastic.co/guide/en/elasticsearch/reference/current/security-api.html) of ES. The paid version of Elasticsearch provides LDAP/kerbors/SAML/AD based authentication.
+The issues that I found is that the open source version of Elasticsearch does not include LDAP、PKI, and Active Directory authentication features. In other words, the open source version of Elasticsearch only provides encrypted communication, [Naitive user authentication](https://www.elastic.co/guide/en/elasticsearch/reference/7.4/native-realm.html). In this case, an organization that wants to use the open source version of Elasticsearch can only deploy it through the intranet and not provide the service to the public. The open source version of Elasticsearch does not have data protection features, and very easy to lead to online index or data may be accidentally deleted
+*Authorization configurations and issues*
+
+### Installation issues
 
