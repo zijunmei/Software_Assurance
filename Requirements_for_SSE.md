@@ -18,7 +18,65 @@ Once the information thief has successfully obtained the login password, the [mu
 Based on the above analysis of the Elasticsearch development documentation, I noticed that the Elastisearch use [FIPS 140-2](https://www.elastic.co/guide/en/elasticsearch/reference/current/fips-140-compliance.html) as requirements for Cryptographic Modules. I believe that Elasticsearch basically satisfy the user requirements for secure login. There are sufficient countermeasures for threats from information thieves.
 
 ### 1.2 
-### 1.3 
+### 1.3 Access Patient Data in a timely manner 
+#### *Use case*
+User story: The hospital customer service representative needs to access patient data stored in Elasticsearch nodes such as medical records,
+future doctor appointments, lab results and pharmacy prescriptions in a timely manner.
+#### *Misuse case*
+The threat in this case is the availabity of the data. A denial-of-service attack or slow running Elasticsearch queries 
+by internal employees will impact the availability of the data needed for the customer service representative to help patients
+calling in. The health information provided to patients are critical for their well-being and need to be 
+searched and retrieved fast from Elasticsearch data.
+#### *Diagram*
+#### *Assessment*
+Jack (the extortionist) launched a DOS attack on the hospital network to overload the Elasticsearch cluster nodes
+by repetitive malicious queries searches. His goal was to bring the hospital patient Elasticsearch data down.
+If Jack succeeds then he will be in force to demand a ransome from the hospital to stop his attack.
+
+Another threat was from Sam (the billing system new hire) with just few weeks on the job and with little training on the Elasticsearch stack.
+Sam's Elasticsearch queries were so complex and returning a large dataset. 
+His queries disrupted the whole customer service department since slow query responses were noticed.
+Customer service representatives were not able to help patients in a timely manner.
+
+Both threats were running queries which took too much time to complete and also a lot of Elasticsearch 
+nodes resources (CPU, memory). Since the hospital depends on the availablity of patients records, to prevent and detect
+the vulnerabilities observed, a system security review was needed.   
+
+Elasticsearch security features provide some security settings to build a system resilient to attacks mentioned above.
+The following security measures can be implemented to prevent such attacks:<br/><br/>
+**Config Elasticsearch query timeout**<br/>
+Query timeout set by default and can be adjusted as needed. 
+The link below gives the different JDBC settings available
+[SQL JDBC Settings](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/sql-jdbc.html#sql-jdbc-installation)<br/>
+
+**Setup Elasticsearch circuit breaker**<br/>
+The circuit breaker are set to prevent the nodes from running out of JVM heap memory.
+This is to prevent queries with a large dataset result 
+[Circuit breakers Settings](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/circuit-breaker-errors.html)<br/>
+
+**Elasticsearch Monitoring dashboard**<br/>
+An Elasticsearch search offers different options to monitor Elasticsearch traffic.
+At the cluster level, Rest API are available to monitor the health of Elasticsearch cluster 
+[Cluster health API](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/cluster-health.html)<br/>
+
+The production cluster can be configured to collect data to send it to monitoring dashboard 
+[Cluster monitoring](https://www.elastic.co/guide/en/elasticsearch/reference/current/monitoring-production.html)<br/>
+
+Tools from Elasticsearch stack (ELK) like Kibana has built in dashboard to send alerts to Elasticsearch Admin
+[XPACK alerts](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/xpack-alerting.html)<br/>
+
+**Set up a cluster for high availability**<br/>
+Elasticsearch offers some features to set up high availability clusters in case of failures or to route traffic to other
+clusters in case of denial-of-service attacks for example
+[High availability clusters](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/high-availability.html)<br/>
+
+Based on the Elasticsearch security features above and the other ones available, we can say 
+that Elasticsearch offers a rich set of security measures to protect the data and prevents availability attacks like the ones used in 
+our use case. 
+Elasticsearch is built with security in mind and it is evolving to adapt and implement new features to remediate new security risks findings
+[Elasticsearch latest release](https://www.elastic.co/guide/en/elasticsearch///reference/master/release-notes-8.4.0.html)
+ 
+
 ## Part 2: Security Review of Elasticsearch
 ### 2.1 Configurations issues
 The security configuration of Elasticsearch mainly includes the following points:
