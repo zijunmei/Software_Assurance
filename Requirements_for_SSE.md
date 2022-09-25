@@ -47,6 +47,7 @@ The Authorization capability of Elasticsearch uses a role-based access control a
     - Various cluster management capabilities are provided.
 - Index/Field Operations  
     - Provides access control to a field level, as well as index level operations.  
+<br>
 *Audit Logging Configuration*
 To enable Elasticsearch audit logging, you need to add a configuration to the Elasticsearch configuration file elasticsearch.yml.  <br>
     "xpack.security.audit.enabled:true"  <br>
