@@ -74,7 +74,7 @@ Based on the Elasticsearch security features above and the other ones available,
 that Elasticsearch offers a rich set of security measures to protect the data and prevents availability attacks like the ones used in 
 our use case. 
 Elasticsearch is built with security in mind and it is evolving to adapt and implement new features to remediate new security risks findings
-Latest release [Elasticsearch latest release](https://www.elastic.co/guide/en/elasticsearch///reference/master/release-notes-8.4.0.html)
+[Elasticsearch latest release](https://www.elastic.co/guide/en/elasticsearch///reference/master/release-notes-8.4.0.html)
  
 
 ## Part 2: Security Review of Elasticsearch
