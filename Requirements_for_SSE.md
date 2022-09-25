@@ -30,18 +30,18 @@ The security configuration of Elasticsearch mainly includes the following points
     - Define which operations each account can do and which indexes it can access.)
 - [User Audit Logging Configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/enable-audit-logging.html)
     - Monitor the clusters for suspicious activity.<br>  
-*Communication traffic encryption configuration*
 
+*Communication traffic encryption configuration*  
 Communication traffic encryption includes internode communication and HTTP client communication.[Here](https://www.elastic.co/guide/en/elasticsearch/reference/7.16/configuring-tls.html#node-certificates) is the description.<br>
 - Internode communication
 Encryption for internode communication needs to be done by configuring the Elasticsearch. The encryption is done by configuring certificates and using ssl. The main purpose of internode communication Encryprtion is to 1. prevent illegal Elasticsearch nodes from joining the cluster and 2. prevent communication traffic from being listened to.<br>
 - HTTP client communication
 Elasticsearch itself provides an http-based REST interface to the outside world, and the communication of this interface needs to be encrypted, which needs to be configured in elasticsearch.yml.<br>
 
-*Authentication Configurations*
+*Authentication Configurations*  
 Elasticsearch's x-pack suite provides basic account authentication with a feature called Realm. Depending on the payment version of Elasticsearch, the Realm module provides different authentication capabilities. The open source version of Elasticsearch only provides a local account service, which can be configured locally by setting it up in elasticsearch.yml. It can also be set up through the [security api](https://www.elastic.co/guide/en/elasticsearch/reference/current/security-api.html) of Elasticsearch. The paid version of Elasticsearch provides LDAP/kerbors/SAML/AD based authentication.<br>  
 
-*Authorization configurations*
+*Authorization configurations*  
 The Authorization capability of Elasticsearch uses a role-based access control approach (RBAC). Elasticsearch provides two catagories of security privileges, with more fine-grained permissions under these two categories. This is described [here](https://www.elastic.co/guide/en/elasticsearch/reference/7.16/security-privileges.html). <br>
 - Cluster Operations Permissions  
     - Various cluster management capabilities are provided.
@@ -53,7 +53,7 @@ To enable Elasticsearch audit logging, you need to add a configuration to the El
 After completing the configuration, the node needs to be restarted to take effect. [Here](https://www.elastic.co/guide/en/elasticsearch/reference/master/enable-audit-logging.html) is the descirption. After the audit logging function is turned on, there will be a file called "xxx_audit.json" in the log directory of the corresponding node, which will have relevant security events recorded in it.
 
 ### Installation
-Before [installing Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html), a newer version of Java(at least Java 8) is required. Then we can get the latest version of Elasticsearch from [Elastic's official website](elastic.co/downloads/elasticsearch).Elasticsearch can be used on multiple platforms, so it has a variety of different installation packages to meet the needs of different platforms.It includes:
+Before [installing Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html), a newer version of Java(at least Java 8) is required. Then we can get the latest version of Elasticsearch from [Elastic's official website](elastic.co/downloads/elasticsearch).Elasticsearch can be used on multiple platforms, so it has a variety of different installation packages to meet the needs of different platforms. The installation instruction of each platform as following:
 - [Linux and MacOS](https://www.elastic.co/guide/en/elasticsearch/reference/current/targz.html)
 - [Windows .zip archive](https://www.elastic.co/guide/en/elasticsearch/reference/current/zip-windows.html)
 - [deb](https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html)
@@ -61,4 +61,4 @@ Before [installing Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/
 - [docker](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/docker.html)
 
 ### Issues 
-The issues that I found is that the open source version of Elasticsearch does not include LDAP、PKI, SAML, and Active Directory(AD) authentication features. In other words, the open source version of Elasticsearch only provides encrypted communication and[Naitive user authentication](https://www.elastic.co/guide/en/elasticsearch/reference/7.4/native-realm.html). In this case, an organization that wants to use the open source version of Elasticsearch can only deploy it through the intranet and not provide the service to the public. Otherwise, They can only use a third-party security certification scheme for their system. The open source version of Elasticsearch does not have data protection features, and very easy to lead to online index or data may be accidentally deleted.<br>
+The issues we found after reviewing the security documents of the Elasticsearch is that the open source version of Elasticsearch does not include LDAP、PKI, SAML, and Active Directory(AD) authentication features. In other words, the open source version of Elasticsearch only provides encrypted communication and [Naitive user authentication](https://www.elastic.co/guide/en/elasticsearch/reference/7.4/native-realm.html)features. In this case, once an organization wants to use the open source version of Elasticsearch, then they can only deploy it through the intranet and not provide the service to the public. Otherwise, They have to looking for a third-party security certification scheme for their system. The open source version of Elasticsearch does not have data protection features, and very easy to lead to online index or data may be accidentally deleted.<br>
