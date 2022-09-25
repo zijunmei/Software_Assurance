@@ -73,7 +73,7 @@ Elasticsearch is built with security in mind and it is evolving to adapt and imp
 ## Team Reflection
 Unfortunately, we lost another team member for this assignment. 
 The team had to adjust for the remaining tasks to complete this assigment.
-The first meeting for this assignment to review the deliverable didn't go well. 
+The first meeting to review the deliverable didn't go well. 
 There were some misunderstandings how to build the use cases.
 The team caught up very quick by the second meeting and first drafts of the use cases were reviewed.
 The weekly team check-in with Dr. Gandi also helped to clarify some of the questions we had.
