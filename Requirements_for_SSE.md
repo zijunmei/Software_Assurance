@@ -19,7 +19,12 @@ Once the information thief has successfully obtained the login password, the [mu
   
 Based on the above analysis of the Elasticsearch development documentation, I noticed that the Elastisearch use [FIPS 140-2](https://www.elastic.co/guide/en/elasticsearch/reference/current/fips-140-compliance.html) as requirements for Cryptographic Modules. I believe that Elasticsearch basically satisfy the user requirements for secure login. There are sufficient countermeasures for threats from information thieves.
 
-### 1.2 
+### 1.2 Storing Patient Data
+#### *Use case*
+A nurse working at a hospital should have the ability to store valid patient information into Elasticsearch for later use. She expects that the data stored in Elasticsearch will be correct and will not have any unauthorized changes or incorrectly stored data.
+#### *Misuse case*
+A financial thief wants the ability to perform unauthorized changes to patient data so they can phish for patients’ financial information or store malicious scripts to get higher level access to Elasticsearch’s database.
+
 ### 1.3 Access Patient Data in timely manner 
 #### *Use case*
 **User story:** The hospital customer service representative needs to access patient data stored in Elasticsearch nodes such as medical records,
