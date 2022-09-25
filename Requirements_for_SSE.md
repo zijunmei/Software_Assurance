@@ -20,7 +20,7 @@ Based on the above analysis of the Elasticsearch development documentation, I no
 ### 1.2 
 ### 1.3 Access Patient Data in timely manner 
 #### *Use case*
-User story: The hospital customer service representative needs to access patient data stored in Elasticsearch nodes such as medical records,
+**User story:** The hospital customer service representative needs to access patient data stored in Elasticsearch nodes such as medical records,
 future doctor appointments, lab results and pharmacy prescriptions in a timely manner.
 #### *Misuse case*
 The threat in this case is the availabity of the data. A denial-of-service attack or slow running Elasticsearch queries 
