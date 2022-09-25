@@ -48,7 +48,8 @@ The Authorization capability of Elasticsearch uses a role-based access control a
     - Various cluster management capabilities are provided.
 - Indic Privileges  
     - Provides access control to a field level, as well as index level operations.  
-The run_as permission enables an authenticated user to submit requests on behalf of another user. The value can be a user name or a comma-separated list of user names. It is worthwhile to continue to observe whether this permission will lead to security risks.  
+The run_as permission enables an authenticated user to submit requests on behalf of another user. The value can be a user name or a comma-separated list of user names. It is worthwhile to continue to observe whether this permission will lead to security risks.<br>  
+
 **Audit Logging Configuration**  
 To enable Elasticsearch audit logging, you need to add a configuration to the Elasticsearch configuration file elasticsearch.yml.  <br>
     **"xpack.security.audit.enabled:true"**  <br>
