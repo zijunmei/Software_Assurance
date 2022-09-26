@@ -147,9 +147,9 @@ Before [installing Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/
 - [Docker](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/docker.html)
 
 ### 2.3 Issues 
-**The documentation should provide warnings and configuration advices for the open source version of Elasticsearch**<br/>
-One issue we found after reviewing the security documents of Elasticsearch is that the open-source version of Elasticsearch does not include LDAP, PKI, SAML, and Active Directory(AD) authentication features. In other words, the open-source version of Elasticsearch only provides encrypted communication and [Native user authentication](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/native-realm.html) features. In this case, once an organization wants to use the open-source version of Elasticsearch, then they can only deploy it through the intranet and not provide the service to the public. Otherwise, they must look for their system's third-party security certification scheme. The open-source version of Elasticsearch does not have data protection features, and very easy to lead to an online index or data may be accidentally deleted.<br>  
-We believe that the security documents of Elasticsearch should be more responsive to the users of the open-source version. In this case, The security documents should warn the user about potentially risky settings. 
+**The documentation should provide warnings and configuration advice for the open source version of Elasticsearch**<br/>
+One issue we found after reviewing the security documents of Elasticsearch is that the open-source version of Elasticsearch does not include LDAP, PKI, SAML, and Active Directory(AD) authentication features. So, the open-source version of Elasticsearch only provides encrypted communication and [Native user authentication](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/native-realm.html) features. Which means if an organization wants to use the open-source version of Elasticsearch, then they can only deploy it through their organizational intranet and cannot provide the service to the public. Otherwise, they must look for their system's third-party security certification scheme. The open-source version of Elasticsearch also does not have data protection features, which makes it very easy for data to be accidentally deleted.<br>  
+We believe that the Elasticsearch security documents should be more clear to open-source users. In this case, The security documents should warn the user about potentially risky settings. 
 <br>
 For example:
 - No setting up Elasticsearch cluster security permissions. 
@@ -164,5 +164,5 @@ To summarize, Elasticsearch has a rich set of security features but the document
 The documenation should provide easy steps to secure Elasticsearch data. It lacks clear security diagrams to follow.
 Videos or slides can help understand better. We found third parties online resources outside Elasticsearch official web site
 offering services to secure Elasticsearch data. This is a clear indication that the processes of settings security 
-is complex and Elasticsearch customers have to turn to those third-party companies for help.
+is complex and Elasticsearch customers have to turn to those third parties companies for help.
 
