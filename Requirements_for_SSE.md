@@ -6,7 +6,7 @@ Confidentiality, Integrity, and Availability (CIA). Building a use case from eac
 
 ### 1.1 User Login
 #### *Use case*
-**User story:** The hospital employee wants to be able to log in to their Elasticsearch accounts so that they can use the Elasticsearch functions. 
+**User story:** The hospital employee wants to be able to log in to his/her Elasticsearch account so that they can access the Elasticsearch data. 
 #### *Misuse case*
 In this case, the threats come from the *information thief* who tries to profit from selling information stored by the Hospital including patient information (ID, medical history, etc.), employee personal information (ID, address, insurance, etc.), and other valuable information.<br>
 #### *Diagram*
