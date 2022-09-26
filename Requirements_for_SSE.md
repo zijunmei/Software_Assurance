@@ -145,7 +145,7 @@ Before [installing Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/
 - [docker](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/docker.html)
 
 ### 2.3 Issues 
-**The Documents should provide more warning and configuration advice for the open source version of Elasticsearch users**  
+**The documentation should provide warnings and configuration advices for the open source version of Elasticsearch users**  
 <br>
 One issue we found after reviewing the security documents of Elasticsearch is that the open-source version of Elasticsearch does not include LDAP, PKI, SAML, and Active Directory(AD) authentication features. In other words, the open-source version of Elasticsearch only provides encrypted communication and [Native user authentication](https://www.elastic.co/guide/en/elasticsearch/reference/7.4/native-realm.html) features. In this case, once an organization wants to use the open-source version of Elasticsearch, then they can only deploy it through the intranet and not provide the service to the public. Otherwise, they must look for their system's third-party security certification scheme. The open-source version of Elasticsearch does not have data protection features, and very easy to lead to an online index or data may be accidentally deleted.<br>  
 We believe that the security documents of Elasticsearch should be more responsive to the users of the open-source version. In this case, The security documents should warn the user about potentially risky settings. 
@@ -156,8 +156,8 @@ For example:
 - Port 9200 mapped to public network.  
 <br>
 
-**The Document should provide more diagrams**  
-We noticed there are a few diagrams related to system configuration and installation throughout the officially provided security documentation. Therefore, it can be difficult for us to read the documentation at the initial stage. It is difficult for us to relate the various authentication and their associated software versions. The process of configuring the whole system is also fragmented; in other words, we cannot create a complete "Big Picture" of the configuration system. This forced us to look at the configuration documentation provided by third parties to get a complete logical chain of clear configuration processes.<br>
+**The documentation should provide more clean security diagrams**  
+We noticed there are a few diagrams related to system security configuration and installation throughout the officially provided security documentation. Therefore, it can be difficult for us to read the documentation at the initial stage. It is difficult for us to relate the various authentication and their associated software versions. The process of configuring the whole system is also fragmented; in other words, we cannot create a complete "Big Picture" of the configuration system. This forced us to look at the configuration documentation provided by third parties to get a complete logical chain of clear configuration processes.<br>
 <br>
 Based on our observations, we believe that ElasticSearch's security documentation should provide more diagrams of security configurations to show the logical relationships and sequences among the various authentication, authorization, etc. This would help users to configure their systems more securely.<br>
 
