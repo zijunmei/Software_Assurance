@@ -26,6 +26,15 @@ A nurse working at a hospital should have the ability to store valid patient inf
 A financial thief wants the ability to perform unauthorized changes to patient data so they can phish for patients’ financial information or store malicious scripts to get higher-level access to Elasticsearch’s database.
 #### *Diagram*
 ![The Diagram of Storing Patient Data](https://user-images.githubusercontent.com/112530627/192171476-b3f06179-31cc-4f49-a7cb-de3c13aee996.png)
+#### *Assessment*
+In this case a financial thief attempts to make unauthorized changes to patient data that is stored in Elasticsearch’s database. These changes could include changing a patient’s contact information or emergency contacts, or adding family members, which can all be used in future phishing attacks to get the user’s financial information. However, Elasticsearch requires that a user have a valid account to access the database, which requires [user authentication](https://www.elastic.co/guide/en/elasticsearch/reference/current/setting-up-authentication.html) of some form most commonly a password. 
+
+The attacker then can attempt to perform a brute force attack to try and successfully guess the user’s password and gain access to the user account. One of the easiest ways to mitigate this is using advanced password requirements to make account passwords harder to guess, or much more time consuming. And even if the attacker gains access to the account, accounts include [access controls]( https://www.elastic.co/guide/en/elasticsearch/reference/current/authorization.html), both role-based and attribute-based, which restrict what actions a user can take, so the account may not have access to the documents the attacker wants. 
+
+Elasticsearch can also enable [audit logging]( https://www.elastic.co/guide/en/elasticsearch/reference/current/enable-audit-logging.html) which creates logs for security related events including authorization failures and suspicious data access attempts. This can help detect the attacker before they have successfully completed their attack.
+
+The financial thief may also attempt to store a malicious script that, when run by a user, could change document access controls, user’s passwords, or open a listening socket creating an opening for the attacker to get a reverse shell. However, Elasticsearch provides [security settings for scripts](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-scripting-security.html) including the ability to set which script types and contexts are allowed or blocked and automatically enabling [Java Security Manager]( https://www.oracle.com/java/technologies/javase/seccodeguide.html) which limits the actions code can make.
+
 
 ### 1.3 Access Patient Data in timely manner 
 #### *Use case*
@@ -137,7 +146,7 @@ Before [installing Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/
 ### 2.3 Issues 
 **The Documents should provide more warning and configuration advice for the open source version of Elasticsearch users**  
 <br>
-The issue we found after reviewing the security documents of Elasticsearch is that the open-source version of Elasticsearch does not include LDAP, PKI, SAML, and Active Directory(AD) authentication features. In other words, the open-source version of Elasticsearch only provides encrypted communication and [Native user authentication](https://www.elastic.co/guide/en/elasticsearch/reference/7.4/native-realm.html)features. In this case, once an organization wants to use the open-source version of Elasticsearch, then they can only deploy it through the intranet and not provide the service to the public. Otherwise, they must look for their system's third-party security certification scheme. The open-source version of Elasticsearch does not have data protection features, and very easy to lead to an online index or data may be accidentally deleted.<br>  
+One issue we found after reviewing the security documents of Elasticsearch is that the open-source version of Elasticsearch does not include LDAP, PKI, SAML, and Active Directory(AD) authentication features. In other words, the open-source version of Elasticsearch only provides encrypted communication and [Native user authentication](https://www.elastic.co/guide/en/elasticsearch/reference/7.4/native-realm.html)features. In this case, once an organization wants to use the open-source version of Elasticsearch, then they can only deploy it through the intranet and not provide the service to the public. Otherwise, they must look for their system's third-party security certification scheme. The open-source version of Elasticsearch does not have data protection features, and very easy to lead to an online index or data may be accidentally deleted.<br>  
 We believe that the security documents of Elasticsearch should be more responsive to the users of the open-source version. In this case, The security documents should warn the user about potentially risky settings. 
 <br>
 For example:
@@ -149,4 +158,6 @@ For example:
 **The Document should provide more diagrams**  
 We noticed there are a few diagrams related to system configuration and installation throughout the officially provided security documentation. Therefore, it can be difficult for us to read the documentation at the initial stage. It is difficult for us to relate the various authentication and their associated software versions. The process of configuring the whole system is also fragmented; in other words, we cannot create a complete "Big Picture" of the configuration system. This forced us to look at the configuration documentation provided by third parties to get a complete logical chain of clear configuration processes.<br>
 <br>
+
 Based on our observations, we believe that ElasticSearch's security documentation should provide more diagrams of security configurations to show the logical relationships and sequences among the various authentication, authorization, etc. This would help users to configure their systems more securely.<br>
+
