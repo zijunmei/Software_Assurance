@@ -162,7 +162,7 @@ We noticed there are a few diagrams related to system security configuration and
 <br>
 To summarize, Elasticsearch has a rich set of security features but the documentation is not clear when and where to use each feature.
 The documenation should provide easy steps to secure Elasticsearch data. It lacks clear security diagrams to follow.
-Videos or slides can help understand better. We found third parties online resources outside Elasticsearch official web site
+Videos or slides can help understand better. We found third-party online resources outside Elasticsearch official web site
 offering services to secure Elasticsearch data. This is a clear indication that the processes of settings security 
 is complex and Elasticsearch customers have to turn to those third parties companies for help.
 
