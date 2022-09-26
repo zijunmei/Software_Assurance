@@ -100,7 +100,7 @@ Going forward, the team will need to meet early on to review and understand the 
 ## Link to Project Board
 [Project Board](https://github.com/users/zijunmei/projects/2)
 ## Part 2: Security Review of Elasticsearch
-### 2.1 Configurations 
+### 2.1 Configuration 
 The security configuration of Elasticsearch mainly includes the following points:
 - [Communication Encryption Configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/security-basic-setup.html) 
     - TLS on the HTTP layer provides an additional layer of security to ensure that all communications to and from the cluster are encrypted.
@@ -121,10 +121,10 @@ Encryption for internodes communication needs to be done by configuring certific
 Elasticsearch itself provides an http-based REST interface to the outside world, and the communication of this interface needs to be encrypted, which needs to be configured in elasticsearch.yml.<br><br>
 Transport Protocol is the name of the protocol that Elasticsearch nodes use to communicate with one another. This name is specific to Elasticsearch and distinguishes the transport port (default 9300) from the HTTP port (default 9200). Nodes communicate with one another using the transport port, and REST clients communicate with Elasticsearch using the HTTP port.<br>
 
-**Authentication Configurations**  
+**Authentication Configuration**  
 Elasticsearch's x-pack suite provides basic account authentication with a feature called Realm. Depending on the version of Elasticsearch, the Realm module provides different authentication capabilities. The open-source version of Elasticsearch only provides a local account service, which can be configured locally by setting it up in elasticsearch.yml. It can also be set up through the [security api](https://www.elastic.co/guide/en/elasticsearch/reference/current/security-api.html) of Elasticsearch. The paid version of Elasticsearch provides LDAP/kerbors/SAML/AD based authentication.<br>  
 
-**Authorization configurations**  
+**Authorization configuration**  
 The Authorization capability of Elasticsearch uses a role-based access control approach (RBAC). Elasticsearch provides two categories of security privileges, with more fine-grained permissions under these two categories. This is described [here](https://www.elastic.co/guide/en/elasticsearch/reference/7.16/security-privileges.html). <br>
 - Clusters Privileges  
     - Various cluster management capabilities are provided.
