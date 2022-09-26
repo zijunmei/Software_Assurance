@@ -107,7 +107,7 @@ The security configuration of Elasticsearch mainly includes the following points
 - [User Authentication Configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/setting-up-authentication.html)
     - Verify whether an account is a legitimate account.
 - [User Authorization Configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/authorization.html)
-    - Define which operations each account can do and which indexes it can access.)
+    - Define which operations each account can do and which indexes it can access.
 - [User Audit Logging Configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/enable-audit-logging.html)
     - Monitor the clusters for suspicious activity.<br>  
 
