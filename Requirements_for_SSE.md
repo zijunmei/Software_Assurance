@@ -97,7 +97,8 @@ The team caught up very quickly by the second meeting, and the first drafts of t
 The weekly team check-in with Dr. Gandi also helped to clarify some of the questions we had.
 The team members all contributed, and we had good zoom meetings collaboration. 
 Going forward, the team will need to meet early on to review and understand the assignment's deliverables.<br/>
-
+## Link to Project Board
+[Project Board](https://github.com/users/zijunmei/projects/2)
 ## Part 2: Security Review of Elasticsearch
 ### 2.1 Configurations 
 The security configuration of Elasticsearch mainly includes the following points:
