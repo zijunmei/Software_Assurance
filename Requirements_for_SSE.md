@@ -145,4 +145,5 @@ For example:
 
 **The Document should provide more diagrams**  
 We noticed that throughout the officially provided security documentation there are few diagrams related to system configuration and installation. Therefore, it can be difficult for us to read the documentation at the initial stage. It is difficult for us to relate the various certifications to each other and to their associated software versions. The process of configuring the whole system is also fragmented, in other words, we are not able to create a complete "Big Picture" of the configuration system. This forced us to look at the configuration documentation provided by third parties to get a complete logical chain of clear configuration processes.<br>
+<br>
 Based on our observations, we believe that ElasticSearch's security documentation should provide more diagrams of security configurations to show the logical relationships and sequences between the various configurations. This would help users to configure their systems more securely.<br>
