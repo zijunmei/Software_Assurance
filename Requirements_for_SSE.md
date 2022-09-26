@@ -139,8 +139,8 @@ After completing the configuration, the node needs to be restarted to take effec
 ### 2.2 Installation
 Before [installing Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html), a newer version of Java(at least Java 8) is required. Then we can get the latest version of Elasticsearch from [Elastic's official website](https://www.elastic.co/guide/en/elasticsearch/reference/current/release-notes-8.4.2.html). Elasticsearch can be used on multiple platforms, so it has various installation packages to meet the needs of different platforms. The installation instruction for each platform as follows:
 - [Linux and MacOS](https://www.elastic.co/guide/en/elasticsearch/reference/current/targz.html)
-- [Windows .zip archive](https://www.elastic.co/guide/en/elasticsearch/reference/current/zip-windows.html)
-- [deb](https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html)
+- [Windows](https://www.elastic.co/guide/en/elasticsearch/reference/current/zip-windows.html)
+- [Debian](https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html)
 - [rpm](https://www.elastic.co/guide/en/elasticsearch/reference/current/rpm.html)
 - [docker](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/docker.html)
 
