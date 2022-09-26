@@ -10,7 +10,7 @@ Confidentiality, Integrity, and Availability (CIA). Building a use case from eac
 #### *Misuse case*
 In this case, the threats come from the *information thief* who tries to gain profit by selling the information of the Hospital, including patient information(ID, medical history, etc.), hospital employee personal information (ID, address, insurance, etc.), and some other pieces of information.<br>
 #### *Diagram*
-![The Diagram of User Login](/images/authentication_use_case——02.drawio.png)
+![The Diagram of User Login](/images/authentication_use_case.drawio.png)
 #### *Assessment* 
 The thief may try to crack the password of the employee so that the thief can illegally login to the system with an authorized account.  <br>
   
