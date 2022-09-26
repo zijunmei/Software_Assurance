@@ -161,8 +161,6 @@ For example:
 We noticed there are a few diagrams related to system security configuration and installation throughout the officially provided security documentation. Therefore, it can be difficult for us to read the documentation at the initial stage. It is difficult for us to relate the various authentication and their associated software versions. The process of configuring the whole system is also fragmented; in other words, we cannot create a complete "Big Picture" of the configuration system. This forced us to look at the configuration documentation provided by third parties to get a complete logical chain of clear configuration processes.<br>
 <br>
 To summarize, Elasticsearch has a rich set of security features but the documentation is not clear when and where to use each feature.
-The documenation should provide easy steps to secure Elasticsearch data. It lacks clear security diagrams to follow.
-Videos or slides can help understand better. We found third-party online resources outside Elasticsearch official web site
-offering services to secure Elasticsearch data. This is a clear indication that the processes of settings security 
-is complex and Elasticsearch customers have to turn to those third parties companies for help.
+The documenation should provide easy steps to secure Elasticsearch data and should clearly identify which features are available for open-source users. It also lacks clear security diagrams to follow and implementing videos or slides could help users better understand the configuration and installation process. We found thirty-party resources outside Elasticsearch's official web site offering services to secure Elasticsearch data. This is a clear indication that the processes of settings security 
+is complex and Elasticsearch customers have to turn to those third-party companies for help.
 
