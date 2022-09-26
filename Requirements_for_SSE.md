@@ -141,8 +141,8 @@ Before [installing Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/
 - [Linux and MacOS](https://www.elastic.co/guide/en/elasticsearch/reference/current/targz.html)
 - [Windows](https://www.elastic.co/guide/en/elasticsearch/reference/current/zip-windows.html)
 - [Debian](https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html)
-- [rpm](https://www.elastic.co/guide/en/elasticsearch/reference/current/rpm.html)
-- [docker](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/docker.html)
+- [RPM](https://www.elastic.co/guide/en/elasticsearch/reference/current/rpm.html)
+- [Docker](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/docker.html)
 
 ### 2.3 Issues 
 **The documentation should provide warnings and configuration advices for the open source version of Elasticsearch users**  
