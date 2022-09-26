@@ -124,10 +124,10 @@ Elasticsearch's x-pack suite provides basic account authentication with a featur
 
 **Authorization configurations**  
 The Authorization capability of Elasticsearch uses a role-based access control approach (RBAC). Elasticsearch provides two categories of security privileges, with more fine-grained permissions under these two categories. This is described [here](https://www.elastic.co/guide/en/elasticsearch/reference/7.16/security-privileges.html). <br>
-- Cluster Privileges  
+- Clusters Privileges  
     - Various cluster management capabilities are provided.
-- Indic Privileges  
-    - Provides access control to field level and index level operations.  
+- Indices Privileges  
+    - Provides access control to field level and indice level operations.  
 The run_as permission enables an authenticated user to submit requests on behalf of another user. The value can be a username or a comma-separated list of usernames. It is worthwhile to observe whether this permission will lead to security risks.<br>  
 
 
