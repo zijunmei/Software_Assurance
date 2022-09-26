@@ -26,6 +26,15 @@ A nurse working at a hospital should have the ability to store valid patient inf
 A financial thief wants the ability to perform unauthorized changes to patient data so they can phish for patients’ financial information or store malicious scripts to get higher level access to Elasticsearch’s database.
 #### *Diagram*
 ![The Diagram of Storing Patient Data](https://user-images.githubusercontent.com/112530627/192171476-b3f06179-31cc-4f49-a7cb-de3c13aee996.png)
+#### *Assessment*
+In this case a financial thief attempts to make unauthorized changes to patient data that is stored in Elasticsearch’s database. These changes could include changing a patient’s contact information or emergency contacts, or adding family members, which can all be used in future phishing attacks to get the user’s financial information. However, Elasticsearch requires that a user have a valid account to access the database, which requires [user authentication](https://www.elastic.co/guide/en/elasticsearch/reference/current/setting-up-authentication.html) of some form most commonly a password. 
+
+The attacker then can attempt to perform a brute force attack to try and successfully guess the user’s password and gain access to the user account. One of the easiest ways to mitigate this is using advanced password requirements to make account passwords harder to guess, or much more time consuming. And even if the attacker gains access to the account, accounts include [access controls]( https://www.elastic.co/guide/en/elasticsearch/reference/current/authorization.html), both role-based and attribute-based, which restrict what actions a user can take, so the account may not have access to the documents the attacker wants. 
+
+Elasticsearch can also enable [audit logging]( https://www.elastic.co/guide/en/elasticsearch/reference/current/enable-audit-logging.html) which creates logs for security related events including authorization failures and suspicious data access attempts. This can help detect the attacker before they have successfully completed their attack.
+
+The financial thief may also attempt to store a malicious script that, when run by a user, could change document access controls, user’s passwords, or open a listening socket creating an opening for the attacker to get a reverse shell. However, Elasticsearch provides [security settings for scripts](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-scripting-security.html) including the ability to set which script types and contexts are allowed or blocked and automatically enabling [Java Security Manager]( https://www.oracle.com/java/technologies/javase/seccodeguide.html) which limits the actions code can make.
+
 
 ### 1.3 Access Patient Data in timely manner 
 #### *Use case*
