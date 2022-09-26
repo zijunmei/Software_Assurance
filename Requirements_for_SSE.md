@@ -145,7 +145,7 @@ Before [installing Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/
 - [Docker](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/docker.html)
 
 ### 2.3 Issues 
-**The documentation should provide warnings and configuration advices for the open source version of Elasticsearch** 
+**The documentation should provide warnings and configuration advices for the open source version of Elasticsearch**<br/>
 One issue we found after reviewing the security documents of Elasticsearch is that the open-source version of Elasticsearch does not include LDAP, PKI, SAML, and Active Directory(AD) authentication features. In other words, the open-source version of Elasticsearch only provides encrypted communication and [Native user authentication](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/native-realm.html) features. In this case, once an organization wants to use the open-source version of Elasticsearch, then they can only deploy it through the intranet and not provide the service to the public. Otherwise, they must look for their system's third-party security certification scheme. The open-source version of Elasticsearch does not have data protection features, and very easy to lead to an online index or data may be accidentally deleted.<br>  
 We believe that the security documents of Elasticsearch should be more responsive to the users of the open-source version. In this case, The security documents should warn the user about potentially risky settings. 
 <br>
