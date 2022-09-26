@@ -50,11 +50,11 @@ searched and retrieved fast from Elasticsearch data.
 #### *Assessment*
 Jack (the extortionist) launched a DOS attack on the hospital network to overload the Elasticsearch cluster nodes
 with repetitive malicious query searches. His goal was to bring the hospital patient Elasticsearch data down.
-If Jack succeeds, he will be forced to demand a ransome from the hospital to stop his attack.
+If Jack succeeds, he will be in a position to force the hospital to pay him a ransome to stop his attack.
 
 Another threat was from Sam (the billing system new hire) with just a few weeks on the job and with little training on the Elasticsearch stack.
 Sam's Elasticsearch queries were so complex and returning a large dataset. 
-His queries disrupted the whole customer service department since slow query responses were noticed.
+His queries disrupted the whole customer service department since slow query search responses were noticed.
 Customer service representatives were not able to help patients in a timely manner.
 
 Both threats were running queries which took too much time to complete and also a lot of Elasticsearch 
