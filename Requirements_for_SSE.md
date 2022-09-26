@@ -90,7 +90,7 @@ The team members all contributed and we had good zoom meetings collaboration.
 Going forward, the team will need to meet early on to review and understand the assignment's deliverables.<br/>
 
 ## Part 2: Security Review of Elasticsearch
-### 2.1 Configurations issues
+### 2.1 Configurations 
 The security configuration of Elasticsearch mainly includes the following points:
 - [Communication Encryption Configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/security-basic-setup.html) 
     - TLS on the HTTP layer it provides an additional layer of security to ensure that all communications to and from the cluster are encrypted.
@@ -134,8 +134,15 @@ Before [installing Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/
 - [docker](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/docker.html)
 
 ### 2.3 Issues 
+**The Documents should provide more warning and configuration advices for the open source version of Elasticsearch users**
 The issues we found after reviewing the security documents of the Elasticsearch is that the open source version of Elasticsearch does not include LDAP、PKI, SAML, and Active Directory(AD) authentication features. In other words, the open source version of Elasticsearch only provides encrypted communication and [Naitive user authentication](https://www.elastic.co/guide/en/elasticsearch/reference/7.4/native-realm.html)features. In this case, once an organization wants to use the open source version of Elasticsearch, then they can only deploy it through the intranet and not provide the service to the public. Otherwise, They have to looking for a third-party security certification scheme for their system. The open source version of Elasticsearch does not have data protection features, and very easy to lead to online index or data may be accidentally deleted.<br>  
-Overall, our review of security documents identified several potentially dangerous behaviors leading to safety incidents.
+We believe that the security documents of Elasticsearch should be more responsible to the users of open source version. In this case, The security documents should warn the user about potentially risky settings. 
+<br>
+For example:
 - No setting up Elasticsearch cluster security permissions. 
 - Elasticsearch server exposed to the pubilc network.
 - Port 9200 mapped to pubilc network.
+
+**The Document should provide more diagrams**
+We noticed that throughout the officially provided security documentation there are few diagrams related to system configuration and installation. Therefore, it can be difficult for us to read the documentation at the initial stage. It is difficult for us to relate the various certifications to each other and to their associated software versions. The process of configuring the whole system is also fragmented, in other words, we are not able to create a complete "Big Picture" of the configuration system. This forced us to look at the configuration documentation provided by third parties to get a complete logical chain of clear configuration processes.<br>
+Based on our observations, we believe that ElasticSearch's security documentation should provide more diagrams of security configurations to show the logical relationships and sequences between the various configurations. This would help users to configure their systems more securely.<br>
