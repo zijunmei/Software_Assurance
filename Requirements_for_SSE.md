@@ -113,13 +113,10 @@ The security configuration of Elasticsearch mainly includes the following points
 
 **Communication encryption configuration**  
 Communication encryption includes internode communication and HTTP client communication. The documentation is located [here](https://www.elastic.co/guide/en/elasticsearch/reference/7.16/configuring-tls.html#node-certificates).<br>
-- Internodes communication<br>
-Encryption for internodes communication needs to be done by configuring certificates and using SSL. The primary purpose of internode communication encryption is to
-  1. Prevent illegal Elasticsearch nodes from joining the cluster and 
-  2. Prevent communication traffic from being listened to.<br>
-
-- HTTP client communication<br>
-Elasticsearch itself provides an http-based REST interface to the outside world, and the communication of this interface needs to be encrypted, which needs to be configured in elasticsearch.yml.<br><br>
+- Internodes communication
+Encryption for internodes communication needs to be done by configuring the Elasticsearch. The encryption is done by configuring certificates and using SSL. The primary purpose of internode communication Encryption is to 1. prevent illegal Elasticsearch nodes from joining the cluster and 2. prevent communication traffic from being listened to.<br>
+- HTTP client communication
+Elasticsearch itself provides an http-based REST interface to the outside world, and the communication of this interface needs to be encrypted, which needs to be configured in elasticsearch.yml.<br>
 Transport Protocol is the name of the protocol that Elasticsearch nodes use to communicate with one another. This name is specific to Elasticsearch and distinguishes the transport port (default 9300) from the HTTP port (default 9200). Nodes communicate with one another using the transport port, and REST clients communicate with Elasticsearch using the HTTP port.<br>
 
 **Authentication Configurations**  
@@ -148,9 +145,9 @@ Before [installing Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/
 - [Docker](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/docker.html)
 
 ### 2.3 Issues 
-**The documentation should provide warnings and configuration advice for the open source version of Elasticsearch** 
-One issue we found after reviewing the security documents of Elasticsearch is that the open-source version does not include LDAP, PKI, SAML, and Active Directory(AD) authentication features. So the open-source version of Elasticsearch only provides encrypted communication and [Native user authentication](https://www.elastic.co/guide/en/elasticsearch/reference/7.4/native-realm.html) features. Because of this if an organization wants to use the open-source version of Elasticsearch, then they can only deploy it through the organization's intranet and cannot provide the service to the public. Otherwise, they must look for their system's third-party security certification scheme. The open-source version of Elasticsearch also does not have data protection features, which can easily lead to data accidentally being deleted.<br>  
-We believe that the security documents of Elasticsearch should be more clear to open-source users. In this case, the security documents should warn the users about potentially risky settings. 
+**The documentation should provide warnings and configuration advices for the open source version of Elasticsearch**<br/>
+One issue we found after reviewing the security documents of Elasticsearch is that the open-source version of Elasticsearch does not include LDAP, PKI, SAML, and Active Directory(AD) authentication features. In other words, the open-source version of Elasticsearch only provides encrypted communication and [Native user authentication](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/native-realm.html) features. In this case, once an organization wants to use the open-source version of Elasticsearch, then they can only deploy it through the intranet and not provide the service to the public. Otherwise, they must look for their system's third-party security certification scheme. The open-source version of Elasticsearch does not have data protection features, and very easy to lead to an online index or data may be accidentally deleted.<br>  
+We believe that the security documents of Elasticsearch should be more responsive to the users of the open-source version. In this case, The security documents should warn the user about potentially risky settings. 
 <br>
 For example:
 - No setting up Elasticsearch cluster security permissions. 
@@ -159,7 +156,11 @@ For example:
 <br>
 
 **The documentation should provide more clean security diagrams**  
-We noticed there are only a few diagrams related to system security configuration and installation throughout the officially provided security documentation. Therefore, it can be difficult for us to read the documentation initially. It can also be difficult for us to relate the various security methods to their associated software versions. The process of configuring the whole system is also fragmented; in other words, we cannot create a complete "Big Picture" of the configuration system. This forced us to look at the configuration documentation provided by third parties to get a complete logical chain of clear configuration processes.<br>
+We noticed there are a few diagrams related to system security configuration and installation throughout the officially provided security documentation. Therefore, it can be difficult for us to read the documentation at the initial stage. It is difficult for us to relate the various authentication and their associated software versions. The process of configuring the whole system is also fragmented; in other words, we cannot create a complete "Big Picture" of the configuration system. This forced us to look at the configuration documentation provided by third parties to get a complete logical chain of clear configuration processes.<br>
 <br>
-Based on our observations, we believe that ElasticSearch's security documentation should distinguish more clearly between the open-source security features available, and the paid features. We also believe that the documentation should provide more diagrams of security configurations to show the logical relationships between authentication, authorization, etc. This would help users to configure their systems more securely and understand the security capabilities.<br>
+To summarize, Elasticsearch has a rich set of security features but the documentation is not clear when and where to use each feature.
+The documenation should provide easy steps to secure Elasticsearch data. It lacks clear security diagrams to follow.
+Videos or slides can help understand better. We found third parties online resources outside Elasticsearch official web site
+offering services to secure Elasticsearch data. This is a clear indication that the processes of settings security 
+is complex and Elasticsearch customers have to turn to those third parties companies for help.
 
