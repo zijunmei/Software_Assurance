@@ -4,7 +4,7 @@
 ### 1.2 Storing Patient Data
 
 ### 1.3 Access Patient Data in timely manner 
-![Availability Assurance Case](/images/Availability_Assurance-Case.jpg)
+![Availability Assurance Case](/images/Availability_Assurance_Case.jpg)
 
 
 ## Part 2: Evidence Alignment
