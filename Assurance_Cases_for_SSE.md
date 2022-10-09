@@ -32,7 +32,7 @@
 ### 2.3. Assurance Case 3
 
 #### *2.3.1. Available Evidence*
-*E1 - System architectural design documents* \
+***E1 - System architectural design documents*** \
 The Elasticsearch architecture uses various design principles to ensure [high availability](https://www.elastic.co/guide/en/elasticsearch/reference/current/high-availability.html) <br/>
 Some of those design features include the following:
 - Scalability: Elasticsearch scales up based on needs to add more capacity to handle transactions load.
