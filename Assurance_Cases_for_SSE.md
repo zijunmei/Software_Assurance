@@ -50,8 +50,7 @@ Pull requests are needed to merge code in the main branch after code review is c
 Elasticsearch [circuit breakers](https://www.elastic.co/guide/en/elasticsearch/reference/current/circuit-breaker.html) are used to limit the memory usage by the queries to prevent JVM heap out of memory errors. This is case of query returning a large dataset result. <br/><br/>
 
 ***E6 - Timeout error for long running query*** \
-Query timeout is set on the [Elasticsearch JDBC driver]
-(https://www.elastic.co/guide/en/elasticsearch/reference/8.4/sql-jdbc.html#sql-jdbc-installation).
+Query timeout is set on the [Elasticsearch JDBC driver](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/sql-jdbc.html#sql-jdbc-installation).
 This settings set the maximum amount of time waiting for a query to return. <br/><br/>
 
 ***E7 - Elasticsearch  monitoring alert notification*** \
