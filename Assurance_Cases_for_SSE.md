@@ -41,7 +41,7 @@ Some of those design features include the following:
 - Backup/restore: Elasticsearch cluster data backup/restore using [snapshot feature](https://www.elastic.co/guide/en/elasticsearch/reference/master/snapshot-restore.html).
 - Alerts: Elasticsearch is properly instrumented to [monitor](https://www.elastic.co/guide/en/kibana/current/kibana-alerts.html) the overall health of an Elasticsearch clusters to detect failures as they occur. <br/><br/>
 
-*E2 - Manual code review at code check-in* \
+**E2 - Manual code review at code check-in** \
 Elasticsearch is an open source software and anyone can contribute to its codebase.
 Best practices guidelines are listed on the Elasticsearch github project explaining how to submit a code change.
 Pull requests are needed to merge code in the main branch after code review is completed by the reviewer.  <br/><br/>
