@@ -49,7 +49,11 @@ Pull requests are needed to merge code in the main branch after code review is c
 
 
 #### *2.3.2. Unavailable/Insufficient Evidence*
-*E2* \
+***E3 - Static code analysis report*** \
+Elasticsearch documentation didn't include any information about code scanning.
+We bieleve that it is being done internally at Elasticsearch and not shared.
+Elasticsearch code scanning results need to be available to show that the software is free from any security vulnerabilities
+to build trusts and confidence required by its users. 
 
 ## 4. Teamwork Reflection
 
