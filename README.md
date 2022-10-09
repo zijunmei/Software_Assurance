@@ -6,5 +6,5 @@
 ## Project Deliverables
 - [Project Proposal](/project_proposal.md)
 - [Requirement](/Requirements_for_SSE.md)
-
+- [Assurance Cases](/Assurance_Cases_for_SSE.md)
 
