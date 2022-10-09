@@ -1,9 +1,5 @@
-# Team 1 Assurance Cases for Software Security Engineering: Liberapay
-
-Written by Team 1:
-Joel Allou, Mohammad H. Al Huneidi, Miti Mareddy, Justin Robbins, and Nicholas Sabata
-
-Link to Liberapay Github: [Liberapay Project](https://github.com/liberapay/liberapay.com)
+## Part 1: Assurance Cases
+### 1.1 User Login
 
 
 ## 1. Claims
