@@ -55,6 +55,10 @@ We believe that it is being done internally at Elasticsearch and not shared.
 Elasticsearch code scanning results need to be available to provide as evidence that the software is free from any security vulnerabilities
 to build trusts and confidence required by its users. 
 
+***E4 - Elasticsearch performance load test results*** \
+This evidence needs to be provided by the Elasticsearch users since it will depend on the environment of operation. 
+Elasticsearch offers application performance monitoring (APM) apps and [Kibana dashboard monitoring](https://www.elastic.co/guide/en/kibana/current/elasticsearch-metrics.html) to observe performance load testing metrics. 
+
 ## 4. Teamwork Reflection
 
 
