@@ -73,14 +73,17 @@ Pull requests are needed to merge code in the main branch after code review is c
 Elasticsearch [circuit breakers](https://www.elastic.co/guide/en/elasticsearch/reference/current/circuit-breaker.html) are used to limit the memory usage by the queries to prevent JVM heap out of memory errors. This is case of query returning a large dataset result. <br/><br/>
 
 ***E6 - Timeout error for long running query*** \
-Query timeout is set on the [Elasticsearch JDBC driver]
-(https://www.elastic.co/guide/en/elasticsearch/reference/8.4/sql-jdbc.html#sql-jdbc-installation).
+Query timeout is set on the [Elasticsearch JDBC driver](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/sql-jdbc.html#sql-jdbc-installation).
 This settings set the maximum amount of time waiting for a query to return. <br/><br/>
 
 ***E7 - Elasticsearch  monitoring alert notification*** \
 An Elasticsearch search offers different options to monitor Elasticsearch traffic. 
-At the cluster level, cluster health API (https://www.elastic.co/guide/en/elasticsearch/reference/8.4/cluster-health.html)
-are available to monitor the health of Elasticsearch cluster. As mentioned above, Elasticsearch Kibana has also monitoring dashboard.
+At the cluster level, [cluster health API](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/cluster-health.html)
+are available to monitor the health of Elasticsearch cluster. Also, as mentioned above, Elasticsearch Kibana has an extensive set of monitoring dashboards to visualize Elasticsearch clusters, nodes and user activities. [Watchers](https://www.elastic.co/guide/en/kibana/current/watcher-ui.html) are used to create actions based on system conditions.<br/><br/>
+
+***E8 - Elasticsearch IP traffic filtering report*** \
+The Elasticsearch security features contain an access control feature called [IP filtering](https://www.elastic.co/guide/en/elasticsearch/reference/current/ip-filtering.html) which allows or rejects hosts IP addresses.
+The source IP of the malicious query is rejected and denied access to run queries. <br/><br/>
 
 #### *2.3.2. Unavailable/Insufficient Evidence*
 ***E3 - Static code analysis report*** \
