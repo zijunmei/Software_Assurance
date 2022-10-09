@@ -47,7 +47,7 @@ Best practices guidelines are listed on the Elasticsearch github project explain
 Pull requests are needed to merge code in the main branch after code review is completed by the reviewer.  <br/><br/>
 
 ***E5 - Circuit breaker error when running query with large dataset*** \ 
-Elasticsearch [circuit breakers](https://www.elastic.co/guide/en/elasticsearch/reference/current/circuit-breaker.html) are used to limit the memory usage by the queries to prevent JVM heap out of memory errors. This is case of query returning a large dataset result.
+Elasticsearch [circuit breakers](https://www.elastic.co/guide/en/elasticsearch/reference/current/circuit-breaker.html) are used to limit the memory usage by the queries to prevent JVM heap out of memory errors. This is case of query returning a large dataset result. <br/><br/>
 
 #### *2.3.2. Unavailable/Insufficient Evidence*
 ***E3 - Static code analysis report*** \
