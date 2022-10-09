@@ -1,6 +1,8 @@
 ## Part 1: Assurance Cases
 ### 1.1 Assurance Case 1
-**Assurance Case:** 
+**Assurance Case:** Elasticsearch acceptably minimizes the risk of unauthorized access.
+
+![Assurance Case 1](/images/Assurance%20Case%20final.png) 
 
 ### 1.2 Assurance Case 2
 **Assurance Case:** 
@@ -15,11 +17,32 @@
 ### 2.1. Assurance Case 1
 
 #### *2.1.1. Available Evidence*
-*E1* \
- ...........
+***E1 - Manual source code review*** \
+In the [security setting documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/security-settings.html#password-hashing-algorithms), the Elasticsearch provides a series of [password hashing algorithms](https://github.com/elastic/elasticsearch/blob/be7c7415627377a1b795400fb8dfcc6cbdf0e322/docs/reference/settings/security-hash-settings.asciidoc) for encrypting user's password before storage. Based on the result of a manual check of the [source code](https://github.com/elastic/elasticsearch/blob/be7c7415627377a1b795400fb8dfcc6cbdf0e322/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/security/authc/support/Hasher.java), We believe that the Elasticsearch does provide a strong encryption algorithm support for user password storage, as the description in the documentation.<br><br>
+
+***E7 - Elasticsearch's two-factor authentication policy*** \
+Elasticsearch provides a [two-factor authentication policy](https://www.elastic.co/guide/en/cloud/current/ec-account-security.html). This policy allows two forms of two-factor authentication access: Text message and Google Authenticator. <br><br>
 
 #### *2.1.2. Unavailable/Insufficient Evidence*
-*E2* \
+
+***E2 - Review of TLS configuration setting*** \
+Reviewing of TLS configuration setting of Elasticsearch should be completed by the system-of-interest (Elasticsearch) admin. 
+This evidence is to prove that Elasticsearch applies strong TLS for secure communication between users and clusters. TLS versions can be enabled and disabled within Elasticsearch via the [ssl.supported_protocols](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/security-settings.html#ssl-tls-settings). However, the Elasticsearch will only support the TLS versions that are enabled by the underlying JDK. In this case, newest TLS v1.3 is supported on JDK11 and later, and JDK8 builds newer than 8u261.It's description in [here](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/jdk-tls-versions.html#jdk-enable-tls-protocol). Therefore, keeping the JDK version up to date is also a guarantee of security.<br><br>
+
+***E3 - Elasticsearch password policy*** \
+Unfortunately, the password policy is unavailable in Elasticsearch. 
+In fact, contributors of Elasticsearch have demanded the password policy in [iusse#29913](https://github.com/elastic/elasticsearch/issues/29913). However, in [issue#84784](https://github.com/elastic/kibana/issues/84784), the developer of Elastcsearch mentioned that "we've historically tried not to make Elasticsearch a full-fledged authentication/identity provider". They encouraged users needing more sophisticated setups to adopt an external identity provider. Therefore, we believe that there is a wide *gap* between the evidence for assurance case and the actual<br><br>
+
+***E4 - Testing results of multiple incorrect passoword attempts*** \
+This evidence is not available. However, we found that, in the [issue#18491](https://github.com/elastic/kibana/issues/18491) and [issue##84784](https://github.com/elastic/kibana/issues/84784), the developer of Elasticsearch so far is not apt to add an account lockout protection functionality to reduce the risk of [Brute-force attack](https://attack.mitre.org/techniques/T1110/003/). Furthermore, Developers believe they need a holistic, stack-wide solution to reducing the threat from brute force cracking.<br><br>
+
+***E5 - Audit logging configuration documentation*** \
+This evidence is unavailable, and we believe it needs to be completed by the system-of-interest (Elasticsearch) security auditors. This evidence is to prove that the audit logging function has been correctly [enabled](https://www.elastic.co/guide/en/elasticsearch/reference/current/enable-audit-logging.html) and [configured](https://www.elastic.co/guide/en/elasticsearch/reference/current/auditing-settings.html). Any misconfiguration will cause a serise of issues.
+<br><br>
+
+***E6 - Audit logging test results*** \
+This evidence is unavailable, and we believe it needs to be completed by the system-of-interest (Elasticsearch) security auditors. This evidence is to prove that the audit logging function is working correctly and that it can guarantee the detection of abnormal access. The testing should based on the [aduit events](https://www.elastic.co/guide/en/elasticsearch/reference/current/audit-event-types.html).
+<br><br>
 
 ### 2.2. Assurance Case 2
 
@@ -54,7 +77,7 @@ Query timeout is set on the [Elasticsearch JDBC driver]
 (https://www.elastic.co/guide/en/elasticsearch/reference/8.4/sql-jdbc.html#sql-jdbc-installation).
 This settings set the maximum amount of time waiting for a query to return. <br/><br/>
 
-**E7 - Elasticsearch  monitoring alert notification*** \
+***E7 - Elasticsearch  monitoring alert notification*** \
 An Elasticsearch search offers different options to monitor Elasticsearch traffic. 
 At the cluster level, cluster health API (https://www.elastic.co/guide/en/elasticsearch/reference/8.4/cluster-health.html)
 are available to monitor the health of Elasticsearch cluster. As mentioned above, Elasticsearch Kibana has also monitoring dashboard.
@@ -70,6 +93,8 @@ to build trusts and confidence required by its users.
 This evidence needs to be provided by the system-of-interest (Elasticsearch) admin since it will depend on the environment of operation. 
 Elasticsearch offers application performance monitoring (APM) apps and [Kibana dashboard monitoring](https://www.elastic.co/guide/en/kibana/current/elasticsearch-metrics.html) to observe performance load testing metrics. 
 
+## 3. Project Board Link
+- [Project Board](https://github.com/users/zijunmei/projects/2/views/1?filterQuery=Assurance+Case+Task)
 ## 4. Teamwork Reflection
 
 
