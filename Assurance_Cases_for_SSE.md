@@ -46,7 +46,8 @@ Elasticsearch is an open source software and anyone can contribute to its codeba
 Best practices guidelines are listed on the Elasticsearch github project explaining how to submit a code change.
 Pull requests are needed to merge code in the main branch after code review is completed by the reviewer.  <br/><br/>
 
-
+***E5 - Circuit breaker error when running query with large dataset*** \ 
+Elasticsearch [circuit breakers](https://www.elastic.co/guide/en/elasticsearch/reference/current/circuit-breaker.html) are used to limit the memory usage by the queries to prevent JVM heap out of memory errors. This is case of query returning a large dataset result.
 
 #### *2.3.2. Unavailable/Insufficient Evidence*
 ***E3 - Static code analysis report*** \
@@ -56,7 +57,7 @@ Elasticsearch code scanning results need to be available to provide as evidence 
 to build trusts and confidence required by its users. 
 
 ***E4 - Elasticsearch performance load test results*** \
-This evidence needs to be provided by the Elasticsearch users since it will depend on the environment of operation. 
+This evidence needs to be provided by the system-of-interest (Elasticsearch) admin since it will depend on the environment of operation. 
 Elasticsearch offers application performance monitoring (APM) apps and [Kibana dashboard monitoring](https://www.elastic.co/guide/en/kibana/current/elasticsearch-metrics.html) to observe performance load testing metrics. 
 
 ## 4. Teamwork Reflection
