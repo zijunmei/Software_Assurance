@@ -60,7 +60,7 @@ are available to monitor the health of Elasticsearch cluster. Also, as mentioned
 
 ***E8 - Elasticsearch IP traffic filtering report*** \
 The Elasticsearch security features contain an access control feature called [IP filtering](https://www.elastic.co/guide/en/elasticsearch/reference/current/ip-filtering.html) which allows or rejects hosts IP addresses.
-The machine IP from where the malicious query is running is rejected and denied access to run queries. <br/><br/>
+The source IP of the malicious query is rejected and denied access to run queries. <br/><br/>
 
 #### *2.3.2. Unavailable/Insufficient Evidence*
 ***E3 - Static code analysis report*** \
