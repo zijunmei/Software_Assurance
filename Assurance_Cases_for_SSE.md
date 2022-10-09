@@ -54,10 +54,10 @@ Query timeout is set on the [Elasticsearch JDBC driver]
 (https://www.elastic.co/guide/en/elasticsearch/reference/8.4/sql-jdbc.html#sql-jdbc-installation).
 This settings set the maximum amount of time waiting for a query to return. <br/><br/>
 
-**E7 - Elasticsearch  monitoring alert notification*** \
+***E7 - Elasticsearch  monitoring alert notification*** \
 An Elasticsearch search offers different options to monitor Elasticsearch traffic. 
-At the cluster level, cluster health API (https://www.elastic.co/guide/en/elasticsearch/reference/8.4/cluster-health.html)
-are available to monitor the health of Elasticsearch cluster. As mentioned above, Elasticsearch Kibana has also monitoring dashboard.
+At the cluster level, [cluster health API](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/cluster-health.html)
+are available to monitor the health of Elasticsearch cluster. Also, as mentioned above, Elasticsearch Kibana has an extensive set of monitoring dashboards to visualize Elasticsearch clusters, nodes and user activities. [Watchers](https://www.elastic.co/guide/en/kibana/current/watcher-ui.html) are used to create actions based on system conditions.
 
 #### *2.3.2. Unavailable/Insufficient Evidence*
 ***E3 - Static code analysis report*** \
