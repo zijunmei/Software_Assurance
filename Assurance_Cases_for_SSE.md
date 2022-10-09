@@ -49,6 +49,11 @@ Pull requests are needed to merge code in the main branch after code review is c
 ***E5 - Circuit breaker error when running query with large dataset*** \
 Elasticsearch [circuit breakers](https://www.elastic.co/guide/en/elasticsearch/reference/current/circuit-breaker.html) are used to limit the memory usage by the queries to prevent JVM heap out of memory errors. This is case of query returning a large dataset result. <br/><br/>
 
+***E6 - Timeout error for long running query*** \
+Query timeout is set on the [Elasticsearch JDBC driver]
+(https://www.elastic.co/guide/en/elasticsearch/reference/8.4/sql-jdbc.html#sql-jdbc-installation)
+This settings set the maximum amount of time waiting for a query to return.
+
 #### *2.3.2. Unavailable/Insufficient Evidence*
 ***E3 - Static code analysis report*** \
 Elasticsearch documentation doesn't include any information about code scanning.
