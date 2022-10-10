@@ -21,7 +21,7 @@
 
 #### *2.1.1. Available Evidence*
 ***E1 - Manual source code review*** \
-In the [security setting documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/security-settings.html#password-hashing-algorithms), Elasticsearch provides a series of [password hashing algorithms](https://github.com/elastic/elasticsearch/blob/be7c7415627377a1b795400fb8dfcc6cbdf0e322/docs/reference/settings/security-hash-settings.asciidoc) for encrypting the user's password before storage. Based on the result of a manual check of the [source code](https://github.com/elastic/elasticsearch/blob/be7c7415627377a1b795400fb8dfcc6cbdf0e322/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/security/authc/support/Hasher.java), We believe that Elasticsearch does provide strong encryption algorithm support for user password storage, as the description in the documentation.<br><br>
+In the [security setting documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/security-settings.html#password-hashing-algorithms), Elasticsearch provides a series of [password hashing algorithms](https://github.com/elastic/elasticsearch/blob/be7c7415627377a1b795400fb8dfcc6cbdf0e322/docs/reference/settings/security-hash-settings.asciidoc) for encrypting the user's password before storage. Based on the result of a manual check of the [source code](https://github.com/elastic/elasticsearch/blob/be7c7415627377a1b795400fb8dfcc6cbdf0e322/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/security/authc/support/Hasher.java), We believe that Elasticsearch does provide strong encryption algorithm support for user password storage, as described in the documentation in the documentation.<br><br>
 
 ***E7 - Elasticsearch's two-factor authentication policy*** \
 In [issue #84784](https://github.com/elastic/kibana/issues/84784), the developer of Elasticsearch indicates that they encourage users needing more sophisticated setups to adopt an external authentication provider such as [SAML](https://www.elastic.co/guide/en/elasticsearch/reference/current/saml-realm.html) or [OIDC](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/security-api-oidc-authenticate.html). Therefore, Elasticsearch itself does not provide 2FA authentication, but it supports an external authentication provider to do it. Here are more issues about 2FA in Elasticsearch: [issue #39414](https://github.com/elastic/kibana/issues/39414) and [issue #31773](https://github.com/elastic/kibana/issues/31773). <br><br>
@@ -29,15 +29,15 @@ In [issue #84784](https://github.com/elastic/kibana/issues/84784), the developer
 #### *2.1.2. Unavailable/Insufficient Evidence*
 
 ***E2 - Review of TLS configuration setting*** \
-Reviewing of the TLS configuration setting of Elasticsearch should be completed by the system-of-interest (Elasticsearch) admin. 
+A review of the TLS configuration setting of Elasticsearch should be completed by the system-of-interest (Elasticsearch) admin. 
 This evidence proves that Elasticsearch applies strong TLS for secure communication between users and clusters. TLS versions can be enabled and disabled within Elasticsearch via the [ssl.supported_protocols](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/security-settings.html#ssl-tls-settings). However, Elasticsearch will only support the TLS versions that the underlying JDK enables. In this case, the newest TLS v1.3 is supported on JDK11 and later, and JDK8 builds newer than 8u261. There is a description [here](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/jdk-tls-versions.html#jdk-enable-tls-protocol). Therefore, keeping the JDK version up to date is also a security guarantee.<br><br>
 
 ***E3 - Elasticsearch password policy*** \
 Unfortunately, the password policy is unavailable in Elasticsearch. 
-Contributors of Elasticsearch have demanded the password policy in [issue #29913](https://github.com/elastic/elasticsearch/issues/29913). However, in [issue #84784](https://github.com/elastic/kibana/issues/84784), the developer of Elasticsearch mentioned that "we've historically tried not to make Elasticsearch a full-fledged authentication/identity provider." They encouraged users needing more sophisticated setups to adopt an external identity provider. Therefore, we believe there is a wide *gap* between the evidence for the assurance case and the actual one.<br><br>
+Contributors of Elasticsearch have demanded a password policy in [issue #29913](https://github.com/elastic/elasticsearch/issues/29913). However, in [issue #84784](https://github.com/elastic/kibana/issues/84784), the developer of Elasticsearch mentioned that "we've historically tried not to make Elasticsearch a full-fledged authentication/identity provider." They encouraged users needing more sophisticated setups to adopt an external identity provider. Therefore, we believe there is a wide *gap* between the evidence for the assurance case and the actual one.<br><br>
 
 ***E4 - Testing results of multiple incorrect passoword attempts*** \
-This evidence is unavailable. However, we found that, in [issue #18491](https://github.com/elastic/kibana/issues/18491) and [issue #84784](https://github.com/elastic/kibana/issues/84784), the developer of Elasticsearch so far is not apt to add an account lockout protection functionality to reduce the risk of [Brute-force attack](https://attack.mitre.org/techniques/T1110/003/). Furthermore, Developers believe they need a holistic, stack-wide solution to reduce the threat of brute force cracking.<br><br>
+This evidence is unavailable. However, we found that, in [issue #18491](https://github.com/elastic/kibana/issues/18491) and [issue #84784](https://github.com/elastic/kibana/issues/84784), the developer of Elasticsearch so far is not apt to add an account lockout protection functionality to reduce the risk of [Brute-force attack](https://attack.mitre.org/techniques/T1110/003/). Furthermore, developers believe they need a holistic, stack-wide solution to reduce the threat of brute force cracking.<br><br>
 
 ***E5 - Audit logging configuration report*** \
 This evidence is unavailable, and we believe it needs to be completed by the system-of-interest (Elasticsearch) security auditors. This evidence proves that the audit logging function has been correctly [enabled](https://www.elastic.co/guide/en/elasticsearch/reference/current/enable-audit-logging.html) and [configured](https://www.elastic.co/guide/en/elasticsearch/reference/current/auditing-settings.html). Any misconfiguration will cause a series of issues.
@@ -127,7 +127,7 @@ Disaster recovery readiness and risk management documents both need to be prepar
 - [Project Board](https://github.com/users/zijunmei/projects/2/views/1?filterQuery=Assurance+Case+Task)
 ## 4. Teamwork Reflection
 The team had some chalenges understanding and defining assurance cases related 
-to our System-Of-Interest. We had few long Zoom meetings talking about the deliverable. <br/>  
+to our System-Of-Interest. We had a few very long Zoom meetings talking about the deliverable. <br/>  
 First drafts of assurance cases were developed and reviewed. The team kept revising 
 them to make the assurance claims arguments useful and related to critical properties of our system. 
 Feedbacks from Dr. Gandhi also helped to make the corrections needed. <br/>
