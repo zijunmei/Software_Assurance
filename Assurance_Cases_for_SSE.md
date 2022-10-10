@@ -5,7 +5,10 @@
 ![Assurance Case 1](/images/Assurance%20Case%20final.png) 
 
 ### 1.2 Assurance Case 2
-**Assurance Case:** 
+**Assurance Case:** Stored data is acceptably protected from unauthorized changes.
+
+![Stored Data Assurance Case](https://user-images.githubusercontent.com/112530627/194796085-de64da12-61d2-40b1-af85-a542088f7a11.png)
+
 
 ### 1.3 Assurance Case 3
 **Assurance Case:** Patient data is available in timely manner.
