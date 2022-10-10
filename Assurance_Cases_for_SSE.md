@@ -103,5 +103,14 @@ Disaster recovery readiness and risk management documents both need to be prepar
 ## 3. Project Board Link
 - [Project Board](https://github.com/users/zijunmei/projects/2/views/1?filterQuery=Assurance+Case+Task)
 ## 4. Teamwork Reflection
+The team had some chalenges understanding and defining assurance cases related 
+to our System-Of-Interest. We had few Zoom meetings to work together to clarify what it is needed.
+We had few long meetings talking about the deliverable. <br/>  
+First drafts of assurance cases were developed and reviewed. The team kept revising 
+them to make the assurance claims arguments useful and related to critical properties of our system. 
+Feedbacks from Dr. Gandhi also helped to make the corrections needed. <br/>
+
+Overall our teamwork worked hard to finalize the deliverable of this assignment but
+going forward, the team would like to start the assignment early and have a more organized short team meetings. 
 
 
