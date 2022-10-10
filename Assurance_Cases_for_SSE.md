@@ -36,7 +36,7 @@ In fact, contributors of Elasticsearch have demanded the password policy in [ius
 ***E4 - Testing results of multiple incorrect passoword attempts*** \
 This evidence is unavailable. However, we found that, in the [issue#18491](https://github.com/elastic/kibana/issues/18491) and [issue##84784](https://github.com/elastic/kibana/issues/84784), the developer of Elasticsearch so far is not apt to add an account lockout protection functionality to reduce the risk of [Brute-force attack](https://attack.mitre.org/techniques/T1110/003/). Furthermore, Developers believe they need a holistic, stack-wide solution to reducing the threat from brute force cracking.<br><br>
 
-***E5 - Audit logging configuration documentation*** \
+***E5 - Audit logging configuration report*** \
 This evidence is unavailable, and we believe it needs to be completed by the system-of-interest (Elasticsearch) security auditors. This evidence is to prove that the audit logging function has been correctly [enabled](https://www.elastic.co/guide/en/elasticsearch/reference/current/enable-audit-logging.html) and [configured](https://www.elastic.co/guide/en/elasticsearch/reference/current/auditing-settings.html). Any misconfiguration will cause a serise of issues.
 <br><br>
 
