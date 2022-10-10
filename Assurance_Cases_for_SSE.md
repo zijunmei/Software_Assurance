@@ -26,8 +26,8 @@ In [issue #84784](https://github.com/elastic/kibana/issues/84784), the developer
 #### *2.1.2. Unavailable/Insufficient Evidence*
 
 ***E2 - Review of TLS configuration setting*** \
-Reviewing of TLS configuration setting of Elasticsearch should be completed by the system-of-interest (Elasticsearch) admin. 
-This evidence is to prove that Elasticsearch applies strong TLS for secure communication between users and clusters. TLS versions can be enabled and disabled within Elasticsearch via the [ssl.supported_protocols](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/security-settings.html#ssl-tls-settings). However, the Elasticsearch will only support the TLS versions that are enabled by the underlying JDK. In this case, newest TLS v1.3 is supported on JDK11 and later, and JDK8 builds newer than 8u261.It's description in [here](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/jdk-tls-versions.html#jdk-enable-tls-protocol). Therefore, keeping the JDK version up to date is also a guarantee of security.<br><br>
+Reviewing of the TLS configuration setting of Elasticsearch should be completed by the system-of-interest (Elasticsearch) admin. 
+This evidence proves that Elasticsearch applies strong TLS for secure communication between users and clusters. TLS versions can be enabled and disabled within Elasticsearch via the [ssl.supported_protocols](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/security-settings.html#ssl-tls-settings). However, Elasticsearch will only support the TLS versions that the underlying JDK enables. In this case, the newest TLS v1.3 is supported on JDK11 and later, and JDK8 builds newer than 8u261. There is a description [here](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/jdk-tls-versions.html#jdk-enable-tls-protocol). Therefore, keeping the JDK version up to date is also a security guarantee.<br><br>
 
 ***E3 - Elasticsearch password policy*** \
 Unfortunately, the password policy is unavailable in Elasticsearch. 
