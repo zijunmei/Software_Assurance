@@ -21,13 +21,13 @@
 In the [security setting documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/security-settings.html#password-hashing-algorithms), the Elasticsearch provides a series of [password hashing algorithms](https://github.com/elastic/elasticsearch/blob/be7c7415627377a1b795400fb8dfcc6cbdf0e322/docs/reference/settings/security-hash-settings.asciidoc) for encrypting user's password before storage. Based on the result of a manual check of the [source code](https://github.com/elastic/elasticsearch/blob/be7c7415627377a1b795400fb8dfcc6cbdf0e322/x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/security/authc/support/Hasher.java), We believe that the Elasticsearch does provide a strong encryption algorithm support for user password storage, as the description in the documentation.<br><br>
 
 ***E7 - Elasticsearch's two-factor authentication policy*** \
-In the [issue#84784](https://github.com/elastic/kibana/issues/84784), the developer of Elasticsearch indicates that they encourage users needing more sophisticated setups to adopt an external autentication provider such as [SAML](https://www.elastic.co/guide/en/elasticsearch/reference/current/saml-realm.html) or [OIDC](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/security-api-oidc-authenticate.html). Therefore, Elasticsearch itself does not provide 2FA-authentication, but it support external autentication provider to do it. Here are more issues about 2FA in Elasticsearch: [issue#39414](https://github.com/elastic/kibana/issues/39414) and [issue#31773](https://github.com/elastic/kibana/issues/31773). <br><br>
+Elasticsearch provides a [two-factor authentication policy](https://www.elastic.co/guide/en/cloud/current/ec-account-security.html). This policy allows two forms of two-factor authentication access: Text message and Google Authenticator. <br><br>
 
 #### *2.1.2. Unavailable/Insufficient Evidence*
 
 ***E2 - Review of TLS configuration setting*** \
 Reviewing of TLS configuration setting of Elasticsearch should be completed by the system-of-interest (Elasticsearch) admin. 
-This evidence is to prove that Elasticsearch applies strong TLS for secure communication between users and clusters. TLS versions can be enabled and disabled within Elasticsearch via the [ssl.supported_protocols](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/security-settings.html#ssl-tls-settings). However, the Elasticsearch will only support the TLS versions that are enabled by the underlying JDK. In this case, newest TLS v1.3 is supported on JDK11 and later, and JDK8 builds newer than 8u261. It's description in [here](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/jdk-tls-versions.html#jdk-enable-tls-protocol). Therefore, keeping the JDK version up to date is also a guarantee of security.<br><br>
+This evidence is to prove that Elasticsearch applies strong TLS for secure communication between users and clusters. TLS versions can be enabled and disabled within Elasticsearch via the [ssl.supported_protocols](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/security-settings.html#ssl-tls-settings). However, the Elasticsearch will only support the TLS versions that are enabled by the underlying JDK. In this case, newest TLS v1.3 is supported on JDK11 and later, and JDK8 builds newer than 8u261.It's description in [here](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/jdk-tls-versions.html#jdk-enable-tls-protocol). Therefore, keeping the JDK version up to date is also a guarantee of security.<br><br>
 
 ***E3 - Elasticsearch password policy*** \
 Unfortunately, the password policy is unavailable in Elasticsearch. 
@@ -90,14 +90,19 @@ The source IP of the malicious query is rejected and denied access to run querie
 Elasticsearch documentation doesn't include any information about code scanning.
 We believe that it is being done internally at Elasticsearch and not shared.
 Elasticsearch code scanning results need to be available to provide as evidence that the software is free from any security vulnerabilities
-to build trusts and confidence required by its users. 
+to build trusts and confidence required by its users. <br/><br/>
 
 ***E4 - Elasticsearch performance load test results*** \
-This evidence needs to be provided by the system-of-interest (Elasticsearch) admin since it will depend on the environment of operation. 
-Elasticsearch offers application performance monitoring (APM) apps and [Kibana dashboard monitoring](https://www.elastic.co/guide/en/kibana/current/elasticsearch-metrics.html) to observe performance load testing metrics. 
+***E9 - Elasticsearch IP monitoring test results*** \
+***E10 - Disaster recovery exercise report*** \
+***E11 - Risk management document*** \
+All the evidences above need to be provided by the system-of-interest (Elasticsearch) technical team since it will depend on the environment of operation. 
+Load test and IP monitoring test results are available from Elasticsearch such as application performance monitoring (APM) apps and [Kibana dashboard monitoring](https://www.elastic.co/guide/en/kibana/current/elasticsearch-metrics.html) to observe performance load testing metrics and queries source IP addresses. The tests need to be run and results provided to stakeholders as assurance cases for the Elasticsearch availablity claim. <br/>
+Disaster recovery readiness and risk management documents both need to be prepared and conducted by knowledgeable stakeholders and provided to those involved in certification, regulation, acquisition, or audit of the system.
 
 ## 3. Project Board Link
 - [Project Board](https://github.com/users/zijunmei/projects/2/views/1?filterQuery=Assurance+Case+Task)
+- 
 ## 4. Teamwork Reflection
 
 
