@@ -47,30 +47,10 @@ This evidence is unavailable, and we believe it needs to be completed by the sys
 ### 2.2. Assurance Case 2
 
 #### *2.2.1. Available Evidence*
-***E1 - Script security measures review*** \
-Elasticsearch does provide the opportunity for [scripting](https://www.elastic.co/guide/en/elasticsearch/reference/master/modules-scripting.html) and includes documentation that describes some of the security restrictions in place for scripts. In the documentation there are three security measure described: Elasticsearch’s main scripting language, Painless, includes an allow list and anything not in the allow list will cause a compilation error, Java Security Manager does not allow scripts to write to files, and script setting that can be configured to restrict certain script types and contexts.<br><br>
-
-***E3 - Role mapping access restrictions*** \
-In Elasticsearch’s [Mapping users and groups to roles](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-roles.html) documentation Elasticsearch describes how roles are mapped to users through either an API or a stored YAML file. The [create or update role mappings API](https://www.elastic.co/guide/en/elasticsearch/reference/current/security-api-put-role-mapping.html) document further explains what level privileges are necessary to access the API to map users to roles. However, there does not appear to be any documentation on what level privileges are required to change the role mapping YAML file.<br><br>
-
-***E5 - Users API documentation review*** \
-The [REST APIs documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/rest-apis.html) lists multiple APIs that could be used to identify other users and their privileges including the [get user API](https://www.elastic.co/guide/en/elasticsearch/reference/current/security-api-get-user.html) and the [has privileges API](https://www.elastic.co/guide/en/elasticsearch/reference/current/security-api-has-privileges.html). The documentation for each of these APIs includes the prerequisite privileges required by the user.<br><br>
-
-***E7 - Input sanitation documentation review*** \
-Elasticsearch does not appear to provide XSS protections by default, however Elastic does provide a [sanitization guide](https://www.elastic.co/guide/en/app-search/current/sanitization-guide.html) which describes some of the XSS vulnerabilities, and explains a protection implemented by Elastic that can be set by the user to prevent these vulnerabilities.<br><br>
+*E1* \
 
 #### *2.2.2. Unavailable/Insufficient Evidence*
-***E2: Results of script capability tests*** \
-Currently there are no test results provided by Elasticsearch for the script security measures available. This would generally fall to the admin in charge of implementing Elasticsearch in the production environment and would be relatively easy to test since there is adequate documentation regarding scripts security settings.<br><br>
-
-***E4 - Role mapping test results*** \
-There are no test results provided by Elasticsearch proving that role mapping is restricted to high privilege users. Again, this would most likely be completed by the admin implementing Elasticsearch in the production environment and should be easily run because of the provided documentation from Elasticsearch.<br><br>
-
-***E6 - Unauthorized access Assurance Case results*** \
-The unauthorized access Assurance Case above describes the protections in place that can help prevent a valid user account from being compromised. It also includes evidence supporting these claims which in turn is evidence that supports the claim that user accounts are protected against compromise.<br><br>
-
-***E8 - XSS pentest results*** \
-Elasticsearch has not performed a pentest on their XSS protections or published the results. This would most likely not be done by Elasticsearch but would fall under a third-party application security team.<br><br>
+*E2* \
 
 ### 2.3. Assurance Case 3
 
@@ -116,7 +96,7 @@ to build trust and confidence required by its users. <br/><br/>
 ***E9 - Elasticsearch IP monitoring test results*** \
 ***E10 - Disaster recovery exercise report*** \
 ***E11 - Risk management document*** \
-All the evidence above need to be provided by the system-of-interest (Elasticsearch) technical team since it will depend on the environment of operation.<br/><br/>
+All the evidences above need to be provided by the system-of-interest (Elasticsearch) technical team since it will depend on the environment of operation.<br/><br/>
 Load test and IP monitoring test results are available from Elasticsearch such as application performance monitoring (APM) apps and [Kibana dashboard monitoring](https://www.elastic.co/guide/en/kibana/current/elasticsearch-metrics.html) to observe the performance load testing metrics and the submitted query source IP addresses. The tests need to be run and results provided to stakeholders as assurance cases for the Elasticsearch availability claim. <br/><br/>
 Disaster recovery readiness and risk management documents both need to be prepared and conducted by knowledgeable stakeholders and provided to those involved in the certification, regulation, acquisition, or audit of the system.
 
@@ -129,7 +109,7 @@ First drafts of assurance cases were developed and reviewed. The team kept revis
 them to make the assurance claims arguments useful and related to critical properties of our system. 
 Feedbacks from Dr. Gandhi also helped to make the corrections needed. <br/>
 
-Overall our teamwork worked hard to finalize the deliverable of this assignment. 
+Overall, our teamwork worked hard to finalize the deliverable of this assignment. 
 Going forward, the team would like to start the assignment early and have a more organized short team meetings. 
 
 
