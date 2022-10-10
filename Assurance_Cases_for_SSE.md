@@ -96,8 +96,8 @@ to build trusts and confidence required by its users. <br/><br/>
 ***E9 - Elasticsearch IP monitoring test results*** \
 ***E10 - Disaster recovery exercise report*** \
 ***E11 - Risk management document*** \
-All the evidences above need to be provided by the system-of-interest (Elasticsearch) technical team since it will depend on the environment of operation. 
-Load test and IP monitoring test results are available from Elasticsearch such as application performance monitoring (APM) apps and [Kibana dashboard monitoring](https://www.elastic.co/guide/en/kibana/current/elasticsearch-metrics.html) to observe performance load testing metrics and queries source IP addresses. The tests need to be run and results provided to stakeholders as assurance cases for the Elasticsearch availablity claim. <br/>
+All the evidences above need to be provided by the system-of-interest (Elasticsearch) technical team since it will depend on the environment of operation.<br/>
+Load test and IP monitoring test results are available from Elasticsearch such as application performance monitoring (APM) apps and [Kibana dashboard monitoring](https://www.elastic.co/guide/en/kibana/current/elasticsearch-metrics.html) to observe performance load testing metrics and queries source IP addresses. The tests need to be run and results provided to stakeholders as assurance cases for the Elasticsearch availablity claim. <br/><br/>
 Disaster recovery readiness and risk management documents both need to be prepared and conducted by knowledgeable stakeholders and provided to those involved in certification, regulation, acquisition, or audit of the system.
 
 ## 3. Project Board Link
