@@ -109,7 +109,7 @@ First drafts of assurance cases were developed and reviewed. The team kept revis
 them to make the assurance claims arguments useful and related to critical properties of our system. 
 Feedbacks from Dr. Gandhi also helped to make the corrections needed. <br/>
 
-Overall our teamwork worked hard to finalize the deliverable of this assignment. 
+Overall, our teamwork worked hard to finalize the deliverable of this assignment. 
 Going forward, the team would like to start the assignment early and have a more organized short team meetings. 
 
 
