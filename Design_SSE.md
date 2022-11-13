@@ -14,24 +14,24 @@ link of model 2 and report here
 
 |STRIDE|Count|
 |------|-----|
-|Spoofing|？|
-|Tampering|？|
-|Repudiation|？|
-|Information Disclosure|？|
-|Denial of Service|？|
-|Elevation of Privilege|？|
+|Spoofing|9|
+|Tampering|2|
+|Repudiation|8|
+|Information Disclosure|4|
+|Denial of Service|9|
+|Elevation of Privilege|9|
 
 
 ### Needs Investigation
 
 |STRIDE|Count|
 |------|-----|
-|Spoofing|？|
-|Tampering|？|
-|Repudiation|？|
-|Information Disclosure|？|
-|Denial of Service|？|
-|Elevation of Privilege|？|
+|Spoofing|7|
+|Tampering|0|
+|Repudiation|0|
+|Information Disclosure|0|
+|Denial of Service|4|
+|Elevation of Privilege|4|
 
 
 
