@@ -3,7 +3,9 @@
 ## Part1: Threat Model and Report
 ### Threat Model 1
 link of model 1 and report here
-### Threat Model 2 
+### Threat Model 2
+![image](https://user-images.githubusercontent.com/112530627/201564041-7add9458-5cee-4732-a3e8-89c5da128ae3.png)
+
 link of model 2 and report here
 
 
