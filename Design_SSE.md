@@ -5,8 +5,7 @@
 link of model 1 and report here
 ### Threat Model 2
 ![image](https://user-images.githubusercontent.com/112530627/201564041-7add9458-5cee-4732-a3e8-89c5da128ae3.png)
-
-link of model 2 and report here
+### [Full HTML Report](./DFD_Model2.htm)<br/><br/>
 
 
 
