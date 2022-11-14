@@ -1,12 +1,12 @@
 # Designing For Software Security Engineering
 
 ## Part1: Threat Model and Report
-### Threat Model 1
+### Authentication DFD
 ![Authentication DFD](/images/Authentication_DFD.PNG)
 ### [Authentication Threat Model HTML Report](https://htmlpreview.github.io/?https://github.com/zijunmei/Software_Assurance/blob/main/Authentication_Threat_Model_Report.htm)<br/><br/>
-### Threat Model 2
+### Data Access DFD
 ![image](https://user-images.githubusercontent.com/112530627/201564041-7add9458-5cee-4732-a3e8-89c5da128ae3.png)
-### [Full HTML Report](https://htmlpreview.github.io/?https://github.com/zijunmei/Software_Assurance/blob/main/DFD_Model2.htm)<br/><br/>
+### [Data Access Threat Model Report](https://htmlpreview.github.io/?https://github.com/zijunmei/Software_Assurance/blob/main/DFD_Model2.htm)<br/><br/>
 
 
 
