@@ -1,6 +1,6 @@
 # Designing For Software Security Engineering
 
-## Part1: Threat Model and Report
+## Part 1: Threat Model and Report
 ### Authentication DFD
 ![Authentication DFD](/images/Authentication_DFD.PNG)
 ### [Authentication Threat Model HTML Report](https://htmlpreview.github.io/?https://github.com/zijunmei/Software_Assurance/blob/main/Authentication_Threat_Model_Report.htm)<br/><br/>
@@ -10,7 +10,7 @@
 
 
 
-## Part2: Observations
+## Part 2: Observations
 
 ### Threats Migitated
 
