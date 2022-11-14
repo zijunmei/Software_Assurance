@@ -2,7 +2,7 @@
 
 ## Part1: Threat Model and Report
 ### Threat Model 1
-link of model 1 and report here
+![image](https://user-images.githubusercontent.com/112530627/201564041-7add9458-5cee-4732-a3e8-89c5da128ae3.png)
 ### Threat Model 2
 ![image](https://user-images.githubusercontent.com/112530627/201564041-7add9458-5cee-4732-a3e8-89c5da128ae3.png)
 ### [Full HTML Report](https://htmlpreview.github.io/?https://github.com/zijunmei/Software_Assurance/blob/main/DFD_Model2.htm)<br/><br/>
