@@ -66,7 +66,7 @@ Also, another observation is the fact that not all the Elasticserarch security f
 - [Project Board](https://github.com/users/zijunmei/projects/2/views/1?filterQuery=Threat+Model)
 
 ## Teamwork Reflection
-
+We started late working on this assignment. The team members had questions what to deliver in the data flow diagram and how much details we can provide. There were some confusions between the data flow and the control flow. The meeting with the Dr. Gandi helped answer some of those questions.  
 
 
  
