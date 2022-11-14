@@ -2,7 +2,8 @@
 
 ## Part1: Threat Model and Report
 ### Threat Model 1
-![Authentication DFD](/images/Authentication_DFD.PNG) 
+![Authentication DFD](/images/Authentication_DFD.PNG)
+### [Full HTML Report](https://htmlpreview.github.io/?https://github.com/zijunmei/Software_Assurance/blob/main/Authentication_Threat_Model_Report.htm)<br/><br/>
 ### Threat Model 2
 ![image](https://user-images.githubusercontent.com/112530627/201564041-7add9458-5cee-4732-a3e8-89c5da128ae3.png)
 ### [Full HTML Report](https://htmlpreview.github.io/?https://github.com/zijunmei/Software_Assurance/blob/main/DFD_Model2.htm)<br/><br/>
