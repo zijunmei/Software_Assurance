@@ -3,8 +3,9 @@
 ## Part1: Threat Model and Report
 ### Threat Model 1
 link of model 1 and report here
-### Threat Model 2 
-link of model 2 and report here
+### Threat Model 2
+![image](https://user-images.githubusercontent.com/112530627/201564041-7add9458-5cee-4732-a3e8-89c5da128ae3.png)
+### [Full HTML Report](https://htmlpreview.github.io/?https://github.com/zijunmei/Software_Assurance/blob/main/DFD_Model2.htm)<br/><br/>
 
 
 
@@ -14,26 +15,34 @@ link of model 2 and report here
 
 |STRIDE|Count|
 |------|-----|
-|Spoofing|？|
-|Tampering|？|
-|Repudiation|？|
-|Information Disclosure|？|
-|Denial of Service|？|
-|Elevation of Privilege|？|
+|Spoofing|9|
+|Tampering|2|
+|Repudiation|8|
+|Information Disclosure|4|
+|Denial of Service|9|
+|Elevation of Privilege|9|
 
 
 ### Needs Investigation
 
 |STRIDE|Count|
 |------|-----|
-|Spoofing|？|
-|Tampering|？|
-|Repudiation|？|
-|Information Disclosure|？|
-|Denial of Service|？|
-|Elevation of Privilege|？|
+|Spoofing|7|
+|Tampering|0|
+|Repudiation|0|
+|Information Disclosure|0|
+|Denial of Service|4|
+|Elevation of Privilege|4|
 
+This data flow diagram maps the flow of data when a user uses the search function of Elasticsearch, to retrieve data stored in an Elasticsearch cluster. The user first provides search parameters to Elasticsearch, which determines what data will be returned to the user. These parameters are passed to the coordinating node, which will route the search request to the data node that is storing the requested data. That data node will then retrieve the requested data from a data directory, stored internally, and send it back to the coordinating node. Once the coordinating node has this data, it will verify the user has the correct privileges to access these documents by checking the user role config file, it will then return the data to the user. If, however, the data is stored on a remote cluster the coordinating node will route the search request to the remote-eligible node, which will act like a client and request the data from the correct remote cluster. Once the remote cluster has returned the correct data the remote-eligible node will send the data back to the coordinating cluster, which will again verify the user roles and return the requested documents.
 
+According to this threat model report, one of the primary sources of threats is the inability to verify the authenticity of the data flow source. Verifying the data flow reliability is our main challenge while researching Elasticsearch and makes up 7 spoofing threats that we determined requires additional investigation. For example, in Threat Model Report 2, Threat #30, "Spoofing of Source Data Store User Role Config file," we were unable to determine if there was a mechanism for the Coordinating (client) node to verify the authenticity of the User Role Config file cannot be verified. According to the official documentation of Elasticsearch, we know that the coordinating node mainly serves the user's search requests. Therefore, it mostly plays the role of a query coordinator, assigning query tasks to the appropriate node and returning query results to users. We have yet to find evidence that the Coordinating node has any authentication mechanisms for the data flow source. The same threat also occurs when data nodes access data directory files that contain the requested documents and are stored inside node. In both cases the node does not verify the source of the data being retrieved and could be accessing data from a spoofed data source. There is a trust boundary between both the Remote-eligible Node and Remote Cluster processes. Establishing the authentication mechanism is an important consideration to ensure the system's security. However, we did not find any evidence to prove the existence of an authentication mechanism for cross-cluster data requests.
+
+An ideal solution uses “[the host-based authentication mechanism (HBA)](https://www.ibm.com/docs/en/rsct/3.2?topic=cssac-understanding-cluster-security-services-privatepublic-key-based-mechanisms)” or “[the enhanced host-based authentication mechanism (HBA2)](https://www.ibm.com/docs/en/rsct/3.2?topic=cssac-understanding-cluster-security-services-privatepublic-key-based-mechanisms)”. The main principle of these two mechanisms is to create a unique private/public key pair for each node in the cluster. Only the node with the corresponding key pair can be considered trustworthy. 
+
+Using this threat report we also determined that there is a significant number of denial-of-service threats that need further investigation. This is due to the fact that although Elasticsearch enables audit logging, which would detect a denial-of-service attack, it is unclear if there are any mechanisms enabled that can protect against external users interrupting data flow. After searching through Elasticsearch’s offered security features, and related issues opened it Elasticsearch’s Github, we were unable to find any information pointing to Elasticsearch’s ability to protect against external agents interrupting the data flow outside of clusters. 
+
+Although the threats we determined require additional investigation were spread out across different threat types, they all revolve around a similar problem, how do nodes inside a cluster interact with resources. There is plenty of information regarding Elasticsearch and its basic security features, however we were unable to find much information on node communication, besides the occasional mention of nodes accessing a file or what type of nodes they communicate with. This causes a problem because without that information it is unclear whether Elasticsearch adequately protects against these threats or if there are optional security features available that can be enabled to further protect the system.
 
 
 
