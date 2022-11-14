@@ -56,7 +56,7 @@ Using this threat report we also determined that there is a significant number o
 Although the threats we determined require additional investigation were spread out across different threat types, they all revolve around a similar problem, how do nodes inside a cluster interact with resources. There is plenty of information regarding Elasticsearch and its basic security features, however we were unable to find much information on node communication, besides the occasional mention of nodes accessing a file or what type of nodes they communicate with. This causes a problem because without that information it is unclear whether Elasticsearch adequately protects against these threats or if there are optional security features available that can be enabled to further protect the system.
 
 ### Observations Summary
-Analyzing the threats from the 2 DFDs provided gave us an opportunity to review more Elasticsearch security configurations.
+Analyzing the threats from the 2 DFDs provided gave us an opportunity to review more of the Elasticsearch security configurations.
 We can say that Elasticsearch has a rich set of security features. But at the same time, all the available security features may create some confusions for Elasticsearch customers. The different integration solutions offered may leave some security loopholes to be remediated.
 
 Also, another observation is the fact that not all the Elasticserarch security features are available to all customers. The new version of Elasticsearch (8.5.0) has many different subscriptions (software licensing). Elasticsearch offers 3 types of licensing: the free and open Basic, Platinum and Enterprise versions. We found for example Authentication audit logging is not available in the free and open version.
