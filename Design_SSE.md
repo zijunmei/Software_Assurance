@@ -66,7 +66,11 @@ Also, another observation is the fact that not all the Elasticserarch security f
 - [Project Board](https://github.com/users/zijunmei/projects/2/views/1?filterQuery=Threat+Model)
 
 ## Teamwork Reflection
-We started late working on this assignment. The team members had questions what to deliver in the data flow diagram and how much details we can provide. There were some confusions between the data flow and the control flow. The meeting with the Dr. Gandi helped answer some of those questions.  
+The team started late working on this assignment. The team members had questions what to deliver in the data flow diagram and how much details were needed. There were some confusions about the data flow vs control flow. The weekly team check-in with Dr. Gandi helped to clarify the deliverable. First drafts of DFDs were developed and reviewed during Zoom meetings and tasks were defined and assigned to the team members to complete the assignment. The team kept revising the DFDs to focus on the important use cases of our System-Of-Interest (Elasticsearch). 
+
+Overall, our team worked hard to finalize the deliverable of this assignment and submit it on time. 
+
+As always, the team would like to start the assignment early.
 
 
  
