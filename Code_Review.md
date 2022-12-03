@@ -5,7 +5,7 @@ Here is the description of the Code review Strategy. <br>
 Answer Following question(*Required*):
 - What challenges did you expect before starting code review?
 - How did your code review strategy attempt to address the anticipated challenges?
-#### CWE checklist ---> everyone to describe the CWEs assigned to each one of us found during the scan (We don't have CSRF or XSS CWEs. Zijun if you have any from your scan then add it)
+
 ### 1.2 Automated Scanning  (2 sections to be completed by Mustapha and Zijun)
 Document findings from automated code scanning (if available). Include links to tool outputs.
 2 sections 
@@ -17,6 +17,9 @@ Document findings from automated code scanning (if available). Include links to 
 Document findings from a manual code review of critical security functions identified in misuse cases, assurance cases, and threat models.
 
 ## Part 2: Key Findings and Contributions  ---> to be completed by Charlie 2.1 ans 2.2
+
+#### CWE checklist ---> Chardlie to put the whole list here  
+
 ### 2.1 Key Findings
 Provide a summary of key findings from manual and/or automated scanning. This summary should include mappings to CWEs to describe significant findings and perceive risk in your hypothetical operational environment.
 ### 2.2 Contributions
