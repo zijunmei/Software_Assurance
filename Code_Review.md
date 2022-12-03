@@ -25,5 +25,5 @@ Planned or ongoing contributions to the upstream open-source project (documentat
 ## Team Reflection  ---> to be completed by Mustapha 
 Include a reflection of your teamwork for this assignment. What issues occurred? How did you resolve them? What did you plan to change moving forward?
 ## Links
-[Project Board]()
-[Project Repository]()
+- [Project Board]()
+- [Project Repository]()
