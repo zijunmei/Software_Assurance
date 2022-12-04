@@ -1,14 +1,23 @@
 # Code analysis for Software Security Engineering
 ## Part 1: Code Review
-### 1.1 Code Review Strategy   ----> to be completed by Mustapha 
-Here is the description of the Code review Strategy. <br>
-Answer Following question(*Required*):
-- What challenges did you expect before starting code review?
-- How did your code review strategy attempt to address the anticipated challenges?
+### 1.1 Code Review Strategy
+Since our System-Of-Interest (Elasticsearch) codebase is very large with a size of around 1GB and having several modules in it, we had to use a code review strategy based on a combination of scenario and weakness-based approach.<br/><br/>
+Our project misuse cases, assurance claims, and threat model were all around user authentication and data access. Those scenarios rely on the X-Pack security settings. As discussed in previous assignments, X-Pack module is an Elasticsearch extension that provides the security, alerting, monitoring, reporting, machine learning, and many other capabilities. So, we focused our efforts analyzing and scanning the X-Pack code to discover if the implementation code has any security weaknesses which can be exploited by malicious actors.<br/>
+
+We expected few challenges before starting the code review. The first one, as noted above, was the large size of the codebase to scan. The second challenge was the selection of the automated code-scanning tool. The tool hardware requirements needed to run it and the amount of time to complete a scan.<br/>
+
+Our code strategy helped us to scope just the X-Pack module. Also, instead of scanning locally using limited hardware resources on our machines, we decided to use automated code-scanning services such as Fortify On Demand and Github CodeQL to scan the codebase.
 
 ### 1.2 Automated Scanning  (2 sections to be completed by Mustapha and Zijun)
-In this assignment, we used two automatic scanning tools: CodeQL and Fortify.
--  **Fortify Scan to be completed by Mustapha
+We tried several automated code-scanning tools but we had trouble running them. We first tried both SonarQube and Fortify SCA.
+SonarQube scan needed some changes in the Elasticsearch Gradle build tool. Fortify SCA is a licensed static code analyzer software.
+Even when we tried to scan just the X-Pack module, Fortify SCA scan was taking a lot of time and hardware resources such CPU and RAM to complete.<br/>
+
+We ended up using two automated code-scanning services: Fortify On Demand and Github CodeQL scanning tools.<br/>
+
+#### Fortify On Demand
+Both Fortify SCA and Fortify On Demand are software offerings by the same company MicroFocus. Fortify SCA will run the scan On-premise. However, Fortify On Demand will run it as a service remotely from MicroFocus hardware. Both of them are licensed software. We used a trial version for Fortify On Demand. The Elasticsearch X-Pack codebase was uploaded to Fortify On Demand and run the scan.
+
 - **CodeQL**
 As a complement to the Fortify scan results, we performed a secondary scan of the code using CodeQL provided by Github. This scan was global in scope and scanned over 2.1M lines of code in total. Finally over 5000 Alerts were found, including 149 Critical Alerts, 311 High Alerts, 17 Medium Alerts, and the rest were warnings and errors.
 Here is the link of the [CodeQL Scanning result](https://github.com/zijunmei/elasticsearch/security/code-scanning).
