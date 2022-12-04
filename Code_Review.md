@@ -27,7 +27,7 @@ See the attached image for the details of the codebase scanned (size, loc, run t
 The scanning report is located here 
 [X-Pack Fortify On Demand Scan Report](https://htmlpreview.github.io/?https://github.com/zijunmei/Software_Assurance/blob/main/Elasticsearch_8.5.2-x-pack-scan-FortifyOnDemand.html)<br/>
 
-The scan findings was reviewed. The majority of the issues were related to java Test classes. We ignored those since they were false positive and took in consideration just the ones used in a production environment. The CWEs related to our scanning key findings are listed below (here).<br/>
+The scan findings was reviewed. The majority of the issues were related to java Test classes. We ignored those since they were false positive and took in consideration just the ones used in a production environment. The CWEs related to our scanning key findings are listed in Part2 below<br/>
 
 The Fortify On Demand discovered critical weaknesses and we are considering filing issues to Elasticsearch.
 
