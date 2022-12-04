@@ -20,7 +20,7 @@ Both Fortify SCA and Fortify On Demand are software offerings by the same compan
 
 [See Fortify On Demand scan here](/images/X-Pack-FortifyOnDemandScan.PNG).
 
-![See Fortify On Demand scan](images/X-Pack-FortifyOnDemandScan.PN "Fortify On Demand scan")
+![See Fortify On Demand scan](/images/X-Pack-FortifyOnDemandScan.PNG "Fortify On Demand scan")
 
 
 #### CodeQL
