@@ -6,7 +6,7 @@ Our project misuse cases, assurance claims, and threat model were all around use
 
 We expected few challenges before starting the code review. The first one, as noted above, was the large size of the codebase to scan. The second challenge was the selection of the automated code-scanning tool. The tool hardware requirements needed to run it and the amount of time to complete a scan.<br/>
 
-Our code strategy helped us to scope just the X-Pack module. Also, instead of scanning locally using limited hardware resources on our machines, we decided to use remote tools such as Fortify On Demand or Github CodeQL to scan the codebase.
+Our code strategy helped us to scope just the X-Pack module. Also, instead of scanning locally using limited hardware resources on our machines, we decided to use automated code-scanning services such as Fortify On Demand and Github CodeQL to scan the codebase.
 
 ### 1.2 Automated Scanning  (2 sections to be completed by Mustapha and Zijun)
 In this assignment, we used two automatic scanning tools: CodeQL and Fortify.
