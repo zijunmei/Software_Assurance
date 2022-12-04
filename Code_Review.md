@@ -22,7 +22,7 @@ Both Fortify SCA and Fortify On Demand are software offerings by the same compan
 
 See the attached image for the details of the codebase scanned (size, loc, run time).
 
-![Fortify On Demand codebase scanned](/images/images/Scan-Stats.PNG "Fortify On Demand codebase scanned")
+![Fortify On Demand codebase scanned](/images/Scan-Stats.PNG "Fortify On Demand codebase scanned")
 
 
 #### CodeQL
