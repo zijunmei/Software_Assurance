@@ -76,8 +76,15 @@ Provide a summary of key findings from manual and/or automated scanning. This su
 ### 2.2 Contributions
 Planned or ongoing contributions to the upstream open-source project (documentation, design changes, code changes, communications, etc.) You can discuss planned or in-progress contributions based on any of the prior assignments in the class.
 
-## Team Reflection  ---> to be completed by Mustapha 
-Include a reflection of your teamwork for this assignment. What issues occurred? How did you resolve them? What did you plan to change moving forward?
+## Team Reflection
+We struggled early on to use an automated code-scanning tool. First, we tried SonarQube but it didn't work. Since SonarQube code scanning needed the compiled Elasticsearch java source code as input, Gradle build tool setup was needed. Even when that setup was done, the scanning failed for different reasons. We ended up after that using Fortify On Demand and Github CodeQL services. The team wasted too much time trying to make SonarQube work before settling on those two tools.<br/>
+
+Also, the team felt that the automated code-scanning need to run first before a manual code review to scope our CWE list to consider. This was more realistic approach than going in blindly and do a manual code review especially with Elasticsearch large codebase. The weekly team check-in with Dr. Ghandi helped provide direction and advices on using other scanning tools if needed.<br/> 
+
+To catch up quickly and start working on the assignment deliverable, short Zoom meetings were scheduled to discuss our progress. Tasks were defined and assigned to each team member. As always, our team worked hard to finalize the deliverable of this assignment and submit it on time.<br/>
+
+For the next and last deliverable, the team would like to start the project presentation assignment early.
+
 ## Links
 - [Project Board]()
 - [Project Repository]()
