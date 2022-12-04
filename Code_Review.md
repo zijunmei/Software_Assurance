@@ -2,7 +2,7 @@
 ## Part 1: Code Review
 ### 1.1 Code Review Strategy
 Since our System-Of-Interest (Elasticsearch) codebase is very large with a size of around 1GB and having several modules in it, we had to use a code review strategy based on a combination of scenario and weakness-based approach.<br/><br/>
-Our project misuse cases, assurance claims, and threat model were all around user authentication and data access. Those scenarios rely on the X-Pack security settings. As discussed in previous assignments, X-Pack module is an Elasticsearch extension that provides the security, alerting, monitoring, reporting, machine learning, and many other capabilities. So, we focused our efforts analyzing and scanning the X-Pack code to discover if the implementation code has any security weaknesses which can be exploited by malicious actors.<br/><br/>
+Our project misuse cases, assurance claims, and threat model were all around user authentication and data access. Those scenarios rely on the X-Pack security settings. As discussed in previous assignments, X-Pack module is an Elasticsearch extension that provides the security, alerting, monitoring, reporting, machine learning, and many other capabilities. So, we focused our efforts analyzing and scanning the X-Pack code to discover if the implementation code has any security weaknesses which can be exploited by malicious actors.<br/>
 
 We expected few challenges before starting the code review. The first one, as noted above, was the large size of the codebase to scan. The second challenge was the selection of the automated code-scanning tool. The tool hardware requirements needed to run it and the amount of time to complete a scan.<br/>
 
