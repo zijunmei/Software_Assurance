@@ -83,7 +83,7 @@ Also, the team felt that the automated code-scanning need to run first before a 
 
 To catch up quickly and start working on the assignment deliverable, short Zoom meetings were scheduled to discuss our progress. Tasks were defined and assigned to each team member. As always, our team worked hard to finalize the deliverable of this assignment and submit it on time.<br/>
 
-For the next and last deliverable, the team would like to start the project presentation assignment early.
+For the next and last deliverable, the team would like to start the project presentation assignment early. 
 
 ## Links
 - [Project Board]()
