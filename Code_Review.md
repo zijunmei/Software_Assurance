@@ -20,6 +20,10 @@ Both Fortify SCA and Fortify On Demand are software offerings by the same compan
 
 ![Fortify On Demand scan](/images/X-Pack-FortifyOnDemandScan.PNG "Fortify On Demand scan")
 
+See the attached image for the details of the codebase scanned (size, loc, run time).
+
+![Fortify On Demand codebase scanned](/images/images/Scan-Stats.PNG "Fortify On Demand codebase scanned")
+
 
 #### CodeQL
 As a complement to the Fortify scan results, we performed a secondary scan of the code using CodeQL provided by Github. This scan was global in scope and scanned over 2.1M lines of code in total. Finally over 5000 Alerts were found, including 149 Critical Alerts, 311 High Alerts, 17 Medium Alerts, and the rest were warnings and errors.
