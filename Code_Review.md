@@ -25,7 +25,7 @@ See the attached image for the details of the codebase scanned (size, loc, run t
 ![Fortify On Demand codebase scanned](/images/Scan-Stats.PNG "Fortify On Demand codebase scanned")
 
 The scanning report is located here 
-### [X-Pack Fortify On Demand Scan Report](https://htmlpreview.github.io/?https://github.com/zijunmei/Software_Assurance/blob/main/Elasticsearch_8.5.2-x-pack-scan-FortifyOnDemand.html)<br/><br/>
+#### [X-Pack Fortify On Demand Scan Report](https://htmlpreview.github.io/?https://github.com/zijunmei/Software_Assurance/blob/main/Elasticsearch_8.5.2-x-pack-scan-FortifyOnDemand.html)<br/><br/>
 
 
 #### CodeQL
