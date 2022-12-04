@@ -9,6 +9,12 @@ We expected few challenges before starting the code review. The first one, as no
 Our code strategy helped us to scope just the X-Pack module. Also, instead of scanning locally using limited hardware resources on our machines, we decided to use automated code-scanning services such as Fortify On Demand and Github CodeQL to scan the codebase.
 
 ### 1.2 Automated Scanning  (2 sections to be completed by Mustapha and Zijun)
+We tried several automated code-scanning tools but we had trouble running them. We first tried both SonarQube and Fortify SCA.
+SonarQube scan needed some changes in the Elasticsearch Gradle build tool. Fortify SCA is a licensed static code analyzer software.
+Even when we tried to scan just the X-Pack module, Fortify SCA scan was taking a lot of time and hardware resources such CPU and RAM to complete.<br/>
+
+We ended up using two automated code-scanning services: Fortify On Demand and Github CodeQL scanning tools.<br/>
+
 In this assignment, we used two automatic scanning tools: CodeQL and Fortify.
 -  **Fortify Scan to be completed by Mustapha
 - **CodeQL**
