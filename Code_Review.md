@@ -24,6 +24,9 @@ See the attached image for the details of the codebase scanned (size, loc, run t
 
 ![Fortify On Demand codebase scanned](/images/Scan-Stats.PNG "Fortify On Demand codebase scanned")
 
+The scanning report is located here 
+### [X-Pack Fortify On Demand Scan Report](https://htmlpreview.github.io/?https://github.com/zijunmei/Software_Assurance/blob/main/Elasticsearch_8.5.2-x-pack-scan-FortifyOnDemand.html)<br/><br/>
+
 
 #### CodeQL
 As a complement to the Fortify scan results, we performed a secondary scan of the code using CodeQL provided by Github. This scan was global in scope and scanned over 2.1M lines of code in total. Finally over 5000 Alerts were found, including 149 Critical Alerts, 311 High Alerts, 17 Medium Alerts, and the rest were warnings and errors.
