@@ -18,7 +18,7 @@ We ended up using two automated code-scanning services: Fortify On Demand and Gi
 #### Fortify On Demand
 Both Fortify SCA and Fortify On Demand are software offerings by the same company MicroFocus. Fortify SCA will run the scan On-premise. However, Fortify On Demand will run it as a service remotely from MicroFocus hardware. Both of them are licensed software. We used a trial version for Fortify On Demand. The Elasticsearch X-Pack codebase was uploaded to Fortify On Demand and run the scan.<br/>
 
-[See Fortify On Demand scan here](https://github.com/zijunmei/elasticsearch/images/X-Pack-FortifyOnDemandScan.PNG).
+[See Fortify On Demand scan here](/images/X-Pack-FortifyOnDemandScan.PNG).
 
 
 #### CodeQL
