@@ -7,12 +7,21 @@ Answer Following question(*Required*):
 - How did your code review strategy attempt to address the anticipated challenges?
 
 ### 1.2 Automated Scanning  (2 sections to be completed by Mustapha and Zijun)
-Document findings from automated code scanning (if available). Include links to tool outputs.
-2 sections 
+In this assignment, we used two automatic scanning tools: CodeQL and Fortify.
 -  **Fortify Scan to be completed by Mustapha
--  **Github scan to be completed by Zijun
+**CodeQL**
+As a complement to the Fortify scan results, we performed a secondary scan of the code using CodeQL provided by Github. This scan was global in scope and scanned over 2.1M lines of code in total. Finally over 5000 Alerts were found, including 149 Critical Alerts, 311 High Alerts, 17 Medium Alerts, and the rest were warnings and errors.
+Here is the link of the [CodeQL Scanning result](https://github.com/zijunmei/elasticsearch/security/code-scanning).
 
-### 1.3 Manual Reviews ---> to be completed by Zijun
+### 1.3 Manual Reviews
+By summarizing the Usa/Misuse case, Assurance case, DFDs, we have identified ten CWEs that may be worthy of our attention.
+
+- [CWE-20](https://cwe.mitre.org/data/definitions/20.html): **Improper Input Validation**
+   - We chose to manually review this CWE because we noticed a relevant threat in the [Authentication Threat Model](https://htmlpreview.github.io/?https://github.com/zijunmei/Software_Assurance/blob/main/Authentication_Threat_Model_Report.htm) and saw the presence of corresponding Alerts in the CodeQL scan results.
+   - 
+
+
+
 
 Document findings from a manual code review of critical security functions identified in misuse cases, assurance cases, and threat models.
 
