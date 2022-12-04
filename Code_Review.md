@@ -15,8 +15,9 @@ Even when we tried to scan just the X-Pack module, Fortify SCA scan was taking a
 
 We ended up using two automated code-scanning services: Fortify On Demand and Github CodeQL scanning tools.<br/>
 
-In this assignment, we used two automatic scanning tools: CodeQL and Fortify.
--  **Fortify Scan to be completed by Mustapha
+- **Fortify On Demand**
+Both Fortify SCA and Fortify On Demand are software offerings by the same company MicroFocus. Fortify SCA will run the scan On-premise. However, Fortify On Demand will run it as a service remotely from MicroFocus hardware. Both of them are licensed software. We used a trial version for Fortify On Demand. The Elasticsearch X-Pack codebase was uploaded to Fortify On Demand and run the scan.
+
 - **CodeQL**
 As a complement to the Fortify scan results, we performed a secondary scan of the code using CodeQL provided by Github. This scan was global in scope and scanned over 2.1M lines of code in total. Finally over 5000 Alerts were found, including 149 Critical Alerts, 311 High Alerts, 17 Medium Alerts, and the rest were warnings and errors.
 Here is the link of the [CodeQL Scanning result](https://github.com/zijunmei/elasticsearch/security/code-scanning).
