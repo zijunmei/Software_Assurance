@@ -9,7 +9,7 @@ Answer Following question(*Required*):
 ### 1.2 Automated Scanning  (2 sections to be completed by Mustapha and Zijun)
 In this assignment, we used two automatic scanning tools: CodeQL and Fortify.
 -  **Fortify Scan to be completed by Mustapha
-**CodeQL**
+- **CodeQL**
 As a complement to the Fortify scan results, we performed a secondary scan of the code using CodeQL provided by Github. This scan was global in scope and scanned over 2.1M lines of code in total. Finally over 5000 Alerts were found, including 149 Critical Alerts, 311 High Alerts, 17 Medium Alerts, and the rest were warnings and errors.
 Here is the link of the [CodeQL Scanning result](https://github.com/zijunmei/elasticsearch/security/code-scanning).
 
