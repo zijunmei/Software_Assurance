@@ -73,6 +73,14 @@ By summarizing the Usa/Misuse case, Assurance case, DFDs, we have identified 8 C
 
 ### 2.1 Key Findings
 Provide a summary of key findings from manual and/or automated scanning. This summary should include mappings to CWEs to describe significant findings and perceive risk in your hypothetical operational environment.
+
+#### CWE-297: Improper Validation of Certificate with Host Mismatch ####
+This weakness identifies that when software communicates with a host that has provided a certificate, it must be verified that the certificate is actually associated with the host. If the certificate is not verified, then the software is open to a man-in-the-middle or spoofing attack, because a malicious host can obtain access to a valid certificate and impersonate the legitimate host, establishing an unwanted connection. Fortify discovered a related vulnerability on line 162 of the file CommandLineHttpClient.java called Insecure SSL: Server Identity Verification Disabled. In this vulnerability the code establishes an SSL connection with a server without verifying the server identity. Because server identity verification is disabled when making SSL connections this code is vulnerable to spoofing which was one of the most common threats discovered in the threat model report.
+
+#### CWE-327: Use of a Broken or Risky Cryptographic Algorithm ####
+In this weakness it is acknowledged that using a broken or risky cryptographic algorithm can expose the sensitive data attempting to be secured to an attacker. This is because of the fact that the algorithm may be broken by the attacker in which case the data is compromised. In the Elasticsearch codebase it was discovered that a vulnerability identified as Insecure Transport: Weak SSL Protocol is present which is directly based on this CWE. This vulnerability is specifically related to the use of weak or outdated SSL or TLS versions when a client is connecting to a web server. In this instance it was determined that by using outdated SSL or TLS versions the connection may carry multiple risks to the transmitted data which can then be exploited to gain access to that data.
+
+
 ### 2.2 Contributions
 Planned or ongoing contributions to the upstream open-source project (documentation, design changes, code changes, communications, etc.) You can discuss planned or in-progress contributions based on any of the prior assignments in the class.
 
