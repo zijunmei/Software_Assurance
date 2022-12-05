@@ -93,6 +93,11 @@ By summarizing the Usa/Misuse case, Assurance case, DFDs, we have identified 8 C
 - Description: A null pointer dereference occurs when a pointer what is assumed to be valid, but is actually null, is dereferenced in the codebase. By dereferencing a null pointer, the software can have reliability problems and can cause the software to crash or exit.
 - In Elasticsearch there were multiple instances identified as a null pointer dereference by Fortify. The main instance that Fortify expands upon is what the accept() method is used in RestCatTransformAction.java can cause a null pointer to be dereferenced on line 233. This is the instance discussed, however, there are 34 instances identified which would be a good place to investigate further.
 
+[CWE-772](https://cwe.mitre.org/data/definitions/772.html): ** Missing Release of Resource after Effective Lifetime**
+- Description: After a resource has finished its effective lifecycle and is no longer needed it is necessary to release the resource. If the software does not release its resources, an attacker can cause a denial-of-service attack by causing resources to get allocated without ever being released eventually preventing other users or services from accessing those resources.
+- Fortify identified four vulnerabilities based on this CWE, each related to a different resource. These vulnerabilities follow the naming convention “Unreleased Resource: XXXX” and the four resources identified are database, sockets, streams, and synchronization. There are two instances of this vulnerability for the database resource in the JdbcCsvSpecIT.java and ConsistentFunctionArgHandlingIT.java files. The instances for the socket resources are all in testing files and have no risk. Streams have the most instances of this vulnerability and all appear to be in the production code. And synchronization also has multiple instances found in the production code. Based on these results it appears that these vulnerabilities do pose a high risk to Elasticsearch.
+
+
 
 ### 2.2 Contributions
 Planned or ongoing contributions to the upstream open-source project (documentation, design changes, code changes, communications, etc.) You can discuss planned or in-progress contributions based on any of the prior assignments in the class.
