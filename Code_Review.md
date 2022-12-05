@@ -107,5 +107,5 @@ To catch up quickly and start working on the assignment deliverable, short Zoom 
 For the next and last deliverable, the team would like to start the project presentation assignment early. 
 
 ## Links
-- [Project Board]()
-- [Project Repository]()
+- [Project Board](https://github.com/users/zijunmei/projects/2/views/1?filterQuery=Code)
+- [Project Repository](https://github.com/zijunmei/Software_Assurance)
