@@ -37,7 +37,7 @@ As a complement to the Fortify scan results, we performed a secondary scan of th
 Here is the link of the [CodeQL Scanning result](https://github.com/zijunmei/elasticsearch/security/code-scanning).
 
 ### 1.3 Manual Reviews
-By summarizing the Usa/Misuse case, Assurance case, DFDs, we have identified 8 CWEs that may be worthy of our attention.
+By summarizing the Use/Misuse cases, Assurance cases, and DFDs we have identified 8 CWEs that may be worthy of our attention.
 
 - [CWE-20](https://cwe.mitre.org/data/definitions/20.html): **Improper Input Validation**
    - We chose to manually review CWE-20 because we noticed a relevant threat in the [Authentication Threat Model](https://htmlpreview.github.io/?https://github.com/zijunmei/Software_Assurance/blob/main/Authentication_Threat_Model_Report.htm) and saw the presence of corresponding [Alerts](https://github.com/zijunmei/elasticsearch/security/code-scanning?query=is%3Aopen+branch%3Amain+Overly) in the CodeQL scan results.
