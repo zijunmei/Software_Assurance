@@ -72,7 +72,6 @@ By summarizing the Usa/Misuse case, Assurance case, DFDs, we have identified 8 C
 #### CWE checklist ---> Chardlie to put the whole list here  
 
 ### 2.1 Key Findings
-Provide a summary of key findings from manual and/or automated scanning. This summary should include mappings to CWEs to describe significant findings and perceive risk in your hypothetical operational environment.
 
 [CWE-297](https://cwe.mitre.org/data/definitions/297.html): **Improper Validation of Certificate with Host Mismatch**
 - Description: When software communicates with a host that has provided a certificate, it must be verified that the certificate is actually associated with the host. If the certificate is not verified, then the software is open to a man-in-the-middle or spoofing attack, because a malicious host can obtain access to a valid certificate and impersonate the legitimate host, establishing an unwanted connection. 
