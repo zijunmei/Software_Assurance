@@ -67,9 +67,7 @@ By summarizing the Usa/Misuse case, Assurance case, DFDs, we have identified 8 C
 
 
 
-## Part 2: Key Findings and Contributions  ---> to be completed by Charlie 2.1 ans 2.2
-
-#### CWE checklist ---> Chardlie to put the whole list here  
+## Part 2: Key Findings and Contributions
 
 ### 2.1 Key Findings
 
