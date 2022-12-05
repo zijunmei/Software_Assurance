@@ -102,7 +102,7 @@ By summarizing the Usa/Misuse case, Assurance case, DFDs, we have identified 8 C
 
 
 ### 2.2 Contributions
-Planned or ongoing contributions to the upstream open-source project (documentation, design changes, code changes, communications, etc.) You can discuss planned or in-progress contributions based on any of the prior assignments in the class.
+Currently we are planning on submitting to Elasticsearch our discovery that outdated versions of SSL and TLS are being used in the codebase and 34 instances of null pointer dereferences. We chose to focus on these security issues for our contribution because they have the most instances in the code and we believe they are two of the largest security issues that are present currently in the codebase. However, Elasticsearch does not allow pull requests to be created for security vulnerabilities or issues. In their [security policy]( https://www.elastic.co/community/security) they ask that vulnerabilities be reported to their [HackerOne bug bounty program]( https://hackerone.com/elastic?type=team) and all other security issues be reported to security@elastic.co so we plan on reporting our findings to Elasticsearch’s security email.
 
 ## Team Reflection
 We struggled early on to use an automated code-scanning tool. First, we tried SonarQube but it didn't work. Since SonarQube code scanning needed the compiled Elasticsearch java source code as input, Gradle build tool setup was needed. Even when that setup was done, the scanning failed for different reasons. We ended up after that using Fortify On Demand and Github CodeQL services. The team wasted too much time trying to make SonarQube work before settling on those two tools.<br/>
